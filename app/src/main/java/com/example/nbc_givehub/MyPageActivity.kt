@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 class MyPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_mypage)
+        setContentView(R.layout.activity_mpage)
         val img = findViewById<ImageView>(R.id.mypage_profile_img)
         val mp_name = findViewById<TextView>(R.id.mypage_name)
         val mp_language = findViewById<TextView>(R.id.mypage_language)

@@ -13,14 +13,14 @@
         android:src="@drawable/give_hub"
         android:layout_margin = "20dp"/>
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toEndOf="@id/mypage_img"
+        app:layout_constraintLeft_toRightOf="@+id/mypage_img"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="15sp"
-        android:layout_marginTop="27dp"
-        android:layout_marginLeft="10dp"
-        android:text="My page"/>
+        android:text="My page"
+        android:layout_marginTop="27dp"/>
+
+
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/mypage_profile_img"
         android:layout_width="130dp"
@@ -32,15 +32,15 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/mypage_img"
-        android:layout_marginTop="50dp"
-        />
+        android:layout_marginTop="50dp" />
+
     <TextView
         android:id="@+id/mypage_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mypage_profile_img"
+        app:layout_constraintTop_toTopOf="parent"
         android:text="name"
         android:textSize="20sp"
         android:textStyle="bold"
