@@ -4,21 +4,35 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/main_background">
-    <ImageView
-        android:id="@+id/mypage_img"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+    <ImageButton
+        android:id="@+id/mypage_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/main_background"/>
+
+    <ImageView
+        android:id="@+id/mypage_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintLeft_toRightOf="@+id/mypage_arrow"
+        app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/give_hub"
-        android:layout_margin = "20dp"/>
+        android:layout_marginTop = "20dp"
+        android:layout_marginLeft="15dp"/>
     <TextView
         android:layout_width="60dp"
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toRightOf="@+id/mypage_img"
         app:layout_constraintTop_toTopOf="parent"
         android:text="My page"
-        android:layout_marginTop="27dp"/>
+        android:textSize="15sp"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="10dp"/>
 
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -40,7 +54,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_profile_img"
         android:text="name"
         android:textSize="20sp"
         android:textStyle="bold"
