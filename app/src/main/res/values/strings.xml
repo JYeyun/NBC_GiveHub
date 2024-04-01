@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">NBC_Givehub</string>
+    <string name="name">Name</string>
+    <string name="id">id</string>
+    <string name="pw">password</string>
+    <string name="nameHint">Enter Your name</string>
+    <string name="idHint">Enter Your Email</string>
+    <string name="pwHint">Enter Your Password</string>
+    <string name="sginUpBt">Create</string>
+    <string name="back">Back</string>
+    <string name="pwPattern">영문, 특수문자 8 ~ 20자 이내에 입력해 주세요.</string>
 </resources>
