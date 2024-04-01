@@ -12,8 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NBC_Givehub"
         tools:targetApi="31">
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".DetailPageActivity" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".MainPageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,10 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailPageActivity"/>
-        <activity android:name=".MainPageActivity"/>
-        <activity android:name=".MyPageActivity"/>
-        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".MyPageActivity" />
+        <activity android:name=".SignUpActivity" />
     </application>
 
 </manifest>
