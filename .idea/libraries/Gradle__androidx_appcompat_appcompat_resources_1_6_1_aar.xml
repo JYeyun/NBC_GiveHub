@@ -1,9 +1,15 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.appcompat:appcompat-resources:1.6.1@aar" external-system-id="GRADLE">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7677cea81e71b7fbd2613cae74f01827/transformed/appcompat-resources-1.6.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7677cea81e71b7fbd2613cae74f01827/transformed/appcompat-resources-1.6.1/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7677cea81e71b7fbd2613cae74f01827/transformed/appcompat-resources-1.6.1/res" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1c2b95e79b3b84833e5d8799ad3f29d1/transformed/appcompat-resources-1.6.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1c2b95e79b3b84833e5d8799ad3f29d1/transformed/appcompat-resources-1.6.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1c2b95e79b3b84833e5d8799ad3f29d1/transformed/appcompat-resources-1.6.1/AndroidManifest.xml" />
+>>>>>>> 1324e6dd12f886db32cc1b2dcbd6300b75fde31b
     </CLASSES>
     <JAVADOC />
     <SOURCES>
