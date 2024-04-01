@@ -13,8 +13,9 @@ drawable mainpage_cl_item_rec
 drawable mainpage_fl_btn_rec
 drawable mainpage_fl_line_rec
 drawable mainpage_img_thumnail
+id btn_logout
+id btn_mypage
 id constraintLayout
-id frameLayout
 id frameLayout3
 id imageView
 id linearLayout

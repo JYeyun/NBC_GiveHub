@@ -3185,6 +3185,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_logout
+id btn_mypage
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3285,7 +3287,6 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
-id frameLayout
 id frameLayout3
 id frost
 id fullscreen_header

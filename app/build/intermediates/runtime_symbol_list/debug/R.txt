@@ -3184,6 +3184,8 @@ int id bounce 0x7f08005e
 int id bounceBoth 0x7f08005f
 int id bounceEnd 0x7f080060
 int id bounceStart 0x7f080061
+int id btn_logout 0x7f0801fb
+int id btn_mypage 0x7f0801fc
 int id buttonPanel 0x7f080062
 int id cache_measures 0x7f080063
 int id callMeasure 0x7f080064
@@ -3284,7 +3286,6 @@ int id flip 0x7f0800c2
 int id floating 0x7f0800c3
 int id forever 0x7f0800c4
 int id fragment_container_view_tag 0x7f0800c5
-int id frameLayout 0x7f0800c6
 int id frameLayout3 0x7f0800c7
 int id frost 0x7f0800c8
 int id fullscreen_header 0x7f0800c9
