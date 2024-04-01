@@ -1,15 +1,16 @@
 package com.example.nbc_givehub
 
+import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Adapter
 import android.widget.FrameLayout
 import android.widget.ListView
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 class MainPageActivity : AppCompatActivity() {
-
-
     val itemList = arrayListOf(
         MainPageItem("give_hub", "작성자1", "mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
         MainPageItem("give_hub", "작성자2", "mainpage_img_thumnail", "포스트2 제목", "포스트2 내용"),
@@ -45,9 +46,30 @@ class MainPageActivity : AppCompatActivity() {
         //로그아웃 클릭 시
         val logoutBtn = findViewById<FrameLayout>(R.id.btn_logout)
         logoutBtn.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
+            val dialog = AlertDialog.Builder(this)
+            dialog.setTitle("로그아웃 하시겠습니까?")
+            dialog.setMessage("다음에 또 멋진 기술 공유로 만나요!")
+            dialog.setIcon(R.drawable.give_hub)
+
+            fun toastLogout() {
+                Toast.makeText(this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            }
+
+            val dialogListener = object : DialogInterface.OnClickListener {
+                override fun onClick(dialog: DialogInterface?, which: Int) {
+                    when (which) {
+                        DialogInterface.BUTTON_POSITIVE -> {
+                            toastLogout()
+                            finish()
+                        }
+                    }
+                }
+            }
+            dialog.setPositiveButton("로그아웃", dialogListener)
+            dialog.setNegativeButton("취소", null)
+            dialog.show()
         }
     }
 }
