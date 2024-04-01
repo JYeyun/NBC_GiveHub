@@ -25,10 +25,10 @@ com.example.nbc_givehub.app-recyclerview-1.1.0-23 /Users/neo/.gradle/caches/tran
 com.example.nbc_givehub.app-emoji2-1.2.0-24 /Users/neo/.gradle/caches/transforms-3/be554354f11e19abc6f185866628b961/transformed/emoji2-1.2.0/res
 com.example.nbc_givehub.app-core-runtime-2.2.0-25 /Users/neo/.gradle/caches/transforms-3/c8a1f78857fe3061c3dd6a3d6e795149/transformed/core-runtime-2.2.0/res
 com.example.nbc_givehub.app-appcompat-1.6.1-26 /Users/neo/.gradle/caches/transforms-3/dbe3962d9aec76139097d4ab0707e85b/transformed/appcompat-1.6.1/res
-com.example.nbc_givehub.app-pngs-27 /Users/neo/NBC/NBC_GiveHub/app/build/generated/res/pngs/debug
-com.example.nbc_givehub.app-resValues-28 /Users/neo/NBC/NBC_GiveHub/app/build/generated/res/resValues/debug
-com.example.nbc_givehub.app-packageDebugResources-29 /Users/neo/NBC/NBC_GiveHub/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.example.nbc_givehub.app-packageDebugResources-30 /Users/neo/NBC/NBC_GiveHub/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.example.nbc_givehub.app-merged_res-31 /Users/neo/NBC/NBC_GiveHub/app/build/intermediates/merged_res/debug
-com.example.nbc_givehub.app-debug-32 /Users/neo/NBC/NBC_GiveHub/app/src/debug/res
-com.example.nbc_givehub.app-main-33 /Users/neo/NBC/NBC_GiveHub/app/src/main/res
+com.example.nbc_givehub.app-pngs-27 /Users/neo/NBC_team/NBC_GiveHub/app/build/generated/res/pngs/debug
+com.example.nbc_givehub.app-resValues-28 /Users/neo/NBC_team/NBC_GiveHub/app/build/generated/res/resValues/debug
+com.example.nbc_givehub.app-packageDebugResources-29 /Users/neo/NBC_team/NBC_GiveHub/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.nbc_givehub.app-packageDebugResources-30 /Users/neo/NBC_team/NBC_GiveHub/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.nbc_givehub.app-merged_res-31 /Users/neo/NBC_team/NBC_GiveHub/app/build/intermediates/merged_res/debug
+com.example.nbc_givehub.app-debug-32 /Users/neo/NBC_team/NBC_GiveHub/app/src/debug/res
+com.example.nbc_givehub.app-main-33 /Users/neo/NBC_team/NBC_GiveHub/app/src/main/res

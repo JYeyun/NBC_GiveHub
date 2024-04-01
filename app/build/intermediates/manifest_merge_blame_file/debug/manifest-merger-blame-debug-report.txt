@@ -20,57 +20,57 @@
 15-->[androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/0a992fb69dfaf79798dac4d49b167158/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:5:5-28:19
+17-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:5:5-28:19
 18        android:allowBackup="true"
-18-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:6:9-35
+18-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/0a992fb69dfaf79798dac4d49b167158/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:7:9-65
+20-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:8:9-54
+23-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:9:9-43
+24-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:10:9-41
+25-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:11:9-54
+26-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:12:9-35
+27-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.NBC_Givehub" >
-29-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:13:9-49
+29-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:13:9-49
 30        <activity android:name="com.example.nbc_givehub.LoginActivity" />
-30-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:15:9-16:44
-30-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:16:13-42
+30-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:15:9-51
+30-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:15:19-48
 31        <activity android:name="com.example.nbc_givehub.DetailPageActivity" />
-31-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:17:9-55
-31-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:17:19-53
+31-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:16:9-56
+31-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:16:19-53
 32        <activity
-32-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:18:9-25:20
+32-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:17:9-25:20
 33            android:name="com.example.nbc_givehub.MainPageActivity"
-33-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:18:19-51
+33-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:18:13-45
 34            android:exported="true" >
-34-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:19:13-36
+34-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:19:13-36
 35            <intent-filter>
-35-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:20:13-24:29
+35-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:20:13-24:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:21:17-69
-36-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:21:25-66
+36-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:21:17-69
+36-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:21:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:23:17-77
-38-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:23:27-74
+38-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:23:17-77
+38-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:23:27-74
 39            </intent-filter>
 40        </activity>
 41        <activity android:name="com.example.nbc_givehub.MyPageActivity" />
-41-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:26:9-51
-41-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:26:19-49
+41-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:26:9-52
+41-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:26:19-49
 42        <activity android:name="com.example.nbc_givehub.SignUpActivity" />
-42-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:27:9-51
-42-->/Users/neo/NBC/NBC_GiveHub/app/src/main/AndroidManifest.xml:27:19-49
+42-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:27:9-52
+42-->/Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:27:19-49
 43
 44        <provider
 44-->[androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/be554354f11e19abc6f185866628b961/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20

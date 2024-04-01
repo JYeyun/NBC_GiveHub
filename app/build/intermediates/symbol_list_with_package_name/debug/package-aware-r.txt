@@ -3318,8 +3318,6 @@ id info
 id invisible
 id inward
 id italic
-id item_contents
-id item_name
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
@@ -3447,6 +3445,9 @@ id percent
 id pin
 id position
 id postLayout
+id post_contents
+id post_image
+id post_name
 id pressed
 id progress_circular
 id progress_horizontal
@@ -3573,6 +3574,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id user_image
+id user_name
 id vertical_only
 id view_offset_helper
 id view_transition

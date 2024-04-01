@@ -20,12 +20,12 @@
         "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/xml/data_extraction_rules.xml"
-    },
-    {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
         "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/xml/data_extraction_rules.xml"
     },
     {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/layout_activity_mypage.xml.flat",

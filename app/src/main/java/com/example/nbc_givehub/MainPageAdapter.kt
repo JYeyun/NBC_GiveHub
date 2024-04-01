@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
 import android.widget.TextView
 
 class MainPageAdapter(val context: Context, val itemList: ArrayList<MainPageItem>) : BaseAdapter() {
@@ -21,13 +22,21 @@ class MainPageAdapter(val context: Context, val itemList: ArrayList<MainPageItem
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val view: View = LayoutInflater.from(context).inflate(R.layout.mainpage_item, null)
 
-        val itemName = view.findViewById<TextView>(R.id.item_name)
-        val itemContents = view.findViewById<TextView>(R.id.item_contents)
+        val userImage = view.findViewById<ImageView>(R.id.user_image)
+        val userName = view.findViewById<TextView>(R.id.user_name)
+        val postImage = view.findViewById<ImageView>(R.id.post_image)
+        val postName = view.findViewById<TextView>(R.id.post_name)
+        val postContents = view.findViewById<TextView>(R.id.post_contents)
 
 
         val item = itemList[position]
-        itemName.text = item.postTitle
-        itemContents.text = item.postSummary
+        val userImageResource = context.resources.getIdentifier(item.userImage, "drawable", context.packageName)
+        val postImageResource = context.resources.getIdentifier(item.postImage, "drawable", context.packageName)
+        userImage.setImageResource(userImageResource)
+        userName.text = item.userName
+        postImage.setImageResource(postImageResource)
+        postName.text = item.postTitle
+        postContents.text = item.postSummary
 
         return view
     }
