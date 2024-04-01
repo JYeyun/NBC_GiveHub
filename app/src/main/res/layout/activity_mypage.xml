@@ -1,6 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_background">
+    <ImageButton
+        android:id="@+id/mypage_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/main_background"/>
+
+    <ImageView
+        android:id="@+id/mypage_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintLeft_toRightOf="@+id/mypage_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/give_hub"
+        android:layout_marginTop = "20dp"
+        android:layout_marginLeft="15dp"/>
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/mypage_img"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="My page"
+        android:textSize="15sp"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mypage_profile_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:civ_border_overlay="true"
+        android:src="@drawable/give_hub"
+        app:civ_border_color="@color/main_stroke"
+        app:civ_border_width="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mypage_img"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/mypage_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_profile_img"
+        android:text="name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/mypage_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_name"
+        android:text="Android / kotlin"
+        android:textSize="15sp"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/mypage_mbti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/mypage_language"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_language"
+        android:text="ENTP"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/mypage_git"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/mypage_language"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_mbti"
+        android:text="git.com"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/mypage_blog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/mypage_language"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_git"
+        android:text="tistory.com"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
