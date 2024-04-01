@@ -1,10 +1,14 @@
 package com.example.nbc_givehub
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Adapter
+import android.widget.FrameLayout
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainPageActivity : AppCompatActivity() {
+
 
     val itemList = arrayListOf(
         MainPageItem("give_hub", "작성자1", "mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
@@ -18,10 +22,33 @@ class MainPageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
 
+        //화면에 리스트뷰 그려주기
         val itemAdapter = MainPageAdapter(this, itemList)
-        val lv = findViewById<ListView>(R.id.mainListView)
-        lv.adapter = itemAdapter
+        val itemListView = findViewById<ListView>(R.id.mainListView)
+        itemListView.adapter = itemAdapter
 
+        //특정 아이템 클릭 시
+        itemListView.setOnItemClickListener{ adapterView, view, i, l ->
+            val clickedItem = itemList[i]
+            val intent = Intent(this, DetailPageActivity::class.java)
+            intent.putExtra("data", clickedItem.toString())
+            startActivity(intent)
+        }
+
+        //마이페이지 클릭 시
+        val myPageBtn = findViewById<FrameLayout>(R.id.btn_mypage)
+        myPageBtn.setOnClickListener {
+            val intent = Intent(this, MyPageActivity::class.java)
+            startActivity(intent)
+        }
+
+        //로그아웃 클릭 시
+        val logoutBtn = findViewById<FrameLayout>(R.id.btn_logout)
+        logoutBtn.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
-
 }
+

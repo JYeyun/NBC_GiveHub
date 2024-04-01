@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.nbc_givehub.app-merged_res-31:/layout_mainpage_item.xml.flat",
-        "source": "com.example.nbc_givehub.app-main-33:/layout/mainpage_item.xml"
-    },
-    {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/layout_activity_mainpage.xml.flat",
         "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/layout/activity_mainpage.xml"
     },
@@ -20,12 +16,12 @@
         "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/xml_data_extraction_rules.xml.flat",
         "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/layout_activity_mypage.xml.flat",
@@ -42,6 +38,10 @@
     {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/xml_backup_rules.xml.flat",
         "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.nbc_givehub.app-merged_res-31:/drawable_mainpage_cl_item_rec.xml.flat",
+        "source": "com.example.nbc_givehub.app-main-33:/drawable/mainpage_cl_item_rec.xml"
     },
     {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/drawable_give_hub.png.flat",
@@ -64,8 +64,16 @@
         "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/layout/activity_signup.xml"
     },
     {
+        "merged": "com.example.nbc_givehub.app-merged_res-31:/layout_activity_mainpage.xml.flat",
+        "source": "com.example.nbc_givehub.app-main-33:/layout/activity_mainpage.xml"
+    },
+    {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.nbc_givehub.app-merged_res-31:/drawable_mainpage_fl_line_rec.xml.flat",
+        "source": "com.example.nbc_givehub.app-main-33:/drawable/mainpage_fl_line_rec.xml"
     },
     {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/layout_activity_detailpage.xml.flat",
@@ -98,6 +106,10 @@
     {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.nbc_givehub.app-merged_res-31:/drawable_mainpage_fl_btn_rec.xml.flat",
+        "source": "com.example.nbc_givehub.app-main-33:/drawable/mainpage_fl_btn_rec.xml"
     },
     {
         "merged": "/Users/neo/.gradle/daemon/8.2/com.example.nbc_givehub.app-merged_res-31:/drawable_ic_launcher_background.xml.flat",

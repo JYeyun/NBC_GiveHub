@@ -25,7 +25,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <FrameLayout
-                android:id="@+id/frameLayout3"
+                android:id="@+id/btn_mypage"
                 android:layout_width="80dp"
                 android:layout_height="30dp"
                 android:layout_marginStart="16dp"
@@ -44,7 +44,7 @@
             </FrameLayout>
 
             <FrameLayout
-                android:id="@+id/frameLayout"
+                android:id="@+id/btn_logout"
                 android:layout_width="80dp"
                 android:layout_height="30dp"
                 android:layout_marginEnd="16dp"
