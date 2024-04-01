@@ -8,7 +8,11 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
+        //회원가입버튼
 
+
+
+        //뒤로가기버튼
 
 
     }
