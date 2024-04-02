@@ -4,10 +4,15 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.androidTest.iml" />
+<<<<<<< Updated upstream
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.androidTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.androidTest~1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.unitTest~1.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.unitTest~1.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NBC_GiveHub.NBC_Givehub.app.unitTest.iml" />
+>>>>>>> Stashed changes
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NBC_Givehub.iml" filepath="$PROJECT_DIR$/.idea/modules/NBC_Givehub.iml" />
     </modules>
   </component>
