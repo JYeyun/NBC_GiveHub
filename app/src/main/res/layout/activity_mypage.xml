@@ -29,12 +29,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toRightOf="@+id/mypage_img"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="My page"
         android:textSize="20sp"
         android:layout_marginTop="24dp"
         android:text="@string/myPage"
-        android:textSize="15sp"
-        android:layout_marginTop="27dp"
         android:layout_marginLeft="10dp"/>
 
     <Button
