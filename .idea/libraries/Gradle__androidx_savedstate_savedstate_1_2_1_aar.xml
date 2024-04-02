@@ -1,15 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.savedstate:savedstate:1.2.1@aar" external-system-id="GRADLE">
     <CLASSES>
-<<<<<<< HEAD
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e01c465cba6f512ed35b2fb81f9185b9/transformed/savedstate-1.2.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e01c465cba6f512ed35b2fb81f9185b9/transformed/savedstate-1.2.1/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e01c465cba6f512ed35b2fb81f9185b9/transformed/savedstate-1.2.1/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e01c465cba6f512ed35b2fb81f9185b9/transformed/savedstate-1.2.1/jars/classes.jar!/" />
-=======
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/8c94d522c77e4e34e35915ee735c788f/transformed/savedstate-1.2.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8c94d522c77e4e34e35915ee735c788f/transformed/savedstate-1.2.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8c94d522c77e4e34e35915ee735c788f/transformed/savedstate-1.2.1/AndroidManifest.xml" />
->>>>>>> 1324e6dd12f886db32cc1b2dcbd6300b75fde31b
     </CLASSES>
     <JAVADOC />
     <SOURCES>
