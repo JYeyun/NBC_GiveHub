@@ -17,6 +17,14 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var signUpActivityResultLauncher: ActivityResultLauncher<Intent>
     private lateinit var userId: EditText
     private lateinit var userPw: EditText
+    val userInfo = listOf(
+        UserInfo("정예윤", "Boss", "1"),
+        UserInfo("정지연", "Captain", "2"),
+        UserInfo("윤영진", "1", "3"),
+        UserInfo("안진혁", "2", "4"),
+        UserInfo("장규식", "3", "5")
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -52,24 +60,32 @@ class LoginActivity : AppCompatActivity() {
     private fun checkAll() {
         val inputId = userId.text.toString()
         val inputPw = userPw.text.toString()
-        //Todo 아이디 비교 로직 if (inputId == )
-
-        //임시로 admin 아이디로 로그인 가능하게 구현해놓았습니다.
-        if (inputId == "admin" && inputPw == "admin") {
-            sendToMain()//로그인 성공 시 메인 화면으로 이동 및 데이터 전달
-        }
+        val user = userInfo.find { it.Id == inputId && it.Pw == inputPw }
+        if (user != null) {
+            sendToMain(user.Id)
+        } else
+            Toast.makeText(this, "아이디 혹은 비밀번호가 틀렸습니다", Toast.LENGTH_SHORT).show()
     }
 
+    //회원가입 페이지에서 이메일만 가져옴
     private fun goSignUp() {
         signUpBtn.setOnClickListener {
             val signUpIntent = Intent(this, SignUpActivity::class.java)
             signUpActivityResultLauncher.launch(signUpIntent)
+            slideRight()
         }
     }
 
-    private fun sendToMain() { //메인 화면으로 Id 전달
+    private fun sendToMain(logInName: String) { //메인 화면으로 Id 전달
         val intent = Intent(this, MainPageActivity::class.java)
-        intent.putExtra("id", userId.text.toString())
+        intent.putExtra("id", logInName)
         startActivity(intent)
+        slideLeft()
     }
+
+    data class UserInfo(
+        val name: String,
+        val Id: String,
+        val Pw: String
+    )
 }
