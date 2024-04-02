@@ -43,6 +43,7 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
 
+
         signInBtn.setOnClickListener {
             checkIdAndPassword()
         }
