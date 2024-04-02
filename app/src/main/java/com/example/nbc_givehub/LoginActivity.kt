@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -18,16 +17,6 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var signUpActivityResultLauncher: ActivityResultLauncher<Intent>
     private lateinit var userId: EditText
     private lateinit var userPw: EditText
-
-    val userInfo = listOf(
-        UserInfo("정예윤", "Boss", "1"),
-        UserInfo("정지연", "Captain", "2"),
-        UserInfo("윤영진", "1", "3"),
-        UserInfo("안진혁", "2", "4"),
-        UserInfo("장규식", "3", "5")
-
-    )
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -63,23 +52,13 @@ class LoginActivity : AppCompatActivity() {
     private fun checkAll() {
         val inputId = userId.text.toString()
         val inputPw = userPw.text.toString()
-        val user = userInfo.find { it.Id == inputId && it.Pw == inputPw }
-        if (user != null) {
-            sendToMain(user.Id)
-        } else
-            Toast.makeText(this, "아이디 혹은 비밀번호가 틀렸습니다", Toast.LENGTH_SHORT).show()
+        //Todo 아이디 비교 로직 if (inputId == )
+
+        //임시로 admin 아이디로 로그인 가능하게 구현해놓았습니다.
+        if (inputId == "admin" && inputPw == "admin") {
+            sendToMain()//로그인 성공 시 메인 화면으로 이동 및 데이터 전달
+        }
     }
-
-
-    //     Todo 아이디 비교 로직 if (inputId == )
-//        Log.d("check","$userInfo")
-//        //임시로 admin 아이디로 로그인 가능하게 구현해놓았습니다.
-//        if (inputId == "admin" && inputPw == "admin") {
-//           //로그인 성공 시 메인 화면으로 이동 및 데이터 전달
-//        }else if (inputId != userInfo.toString() || inputId!= userInfo.toString()){
-//            Toast.makeText(this, "아이디 혹은 비밀번호가 틀렸습니다", Toast.LENGTH_SHORT).show()
-//        }
-
 
     private fun goSignUp() {
         signUpBtn.setOnClickListener {
@@ -88,16 +67,9 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun sendToMain(logInName: String) { //메인 화면으로 Id 전달
+    private fun sendToMain() { //메인 화면으로 Id 전달
         val intent = Intent(this, MainPageActivity::class.java)
-        intent.putExtra("id", logInName)
+        intent.putExtra("id", userId.text.toString())
         startActivity(intent)
     }
-
-    data class UserInfo(
-        val name: String,
-        val Id: String,
-        val Pw: String
-    )
-
 }
