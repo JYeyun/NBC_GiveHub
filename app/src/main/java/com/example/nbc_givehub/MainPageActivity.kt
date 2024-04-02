@@ -8,6 +8,7 @@ import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.nbc_givehub.MainPageItem.Companion.dummyPostData
 
 class MainPageActivity : AppCompatActivity() {
 
@@ -21,14 +22,8 @@ class MainPageActivity : AppCompatActivity() {
         //로그인 페이지에서 데이터 받아오기
         val id = intent.getStringExtra("id") ?: "Unknown"
 
-        //더미포스트 추가
-        val dummyPost = listOf(
-            MainPageItem("give_hub", id, "mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
-            MainPageItem("give_hub", "작성자2", "mainpage_img_thumnail", "포스트2 제목", "포스트2 내용"),
-            MainPageItem("give_hub", id, "mainpage_img_thumnail", "포스트3 제목", "포스트3 내용"),
-            MainPageItem("give_hub", "작성자4", "mainpage_img_thumnail", "포스트4 제목", "포스트4 내용"),
-            MainPageItem("give_hub", "작성자5", "mainpage_img_thumnail", "포스트5 제목", "포스트5 내용")
-        )
+        //더미포스트 생성 및 리스트뷰에 추가
+        val dummyPost = dummyPostData(id)
         itemList.addAll(dummyPost)
 
         //상호작용 버튼 선언
@@ -74,7 +69,6 @@ class MainPageActivity : AppCompatActivity() {
     private fun doLogout() {
         //로그아웃 모달 띄움
         val dialog = AlertDialog.Builder(this)
-        var temp =
         dialog.setTitle(R.string.logoutMessageTitle)
         dialog.setMessage(R.string.logoutMessageContents)
         dialog.setIcon(R.drawable.give_hub)

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-29:12
 MERGED from [com.google.android.material:material:1.11.0] /Users/neo/.gradle/caches/transforms-3/252c46be41e809bdc0674b9e8aba5d57/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/neo/.gradle/caches/transforms-3/dfeb4f1f6f3883e8ee89927a449e3171/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/neo/.gradle/caches/transforms-3/7677cea81e71b7fbd2613cae74f01827/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -57,8 +57,8 @@ MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/neo/.gradle/caches/trans
 	xmlns:android
 		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:5:5-28:19
-INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:5:5-28:19
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:5:5-27:19
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:5:5-27:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/neo/.gradle/caches/transforms-3/252c46be41e809bdc0674b9e8aba5d57/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/neo/.gradle/caches/transforms-3/252c46be41e809bdc0674b9e8aba5d57/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/neo/.gradle/caches/transforms-3/dfeb4f1f6f3883e8ee89927a449e3171/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -100,37 +100,37 @@ MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/neo/.gradle/caches/trans
 	android:dataExtractionRules
 		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:7:9-65
 activity#com.example.nbc_givehub.LoginActivity
-ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:15:9-23:20
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:15:9-22:20
 	android:exported
-		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:17:13-36
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:16:13-42
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:15:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:21:17-77
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:21:27-74
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:20:27-74
 activity#com.example.nbc_givehub.DetailPageActivity
-ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:24:9-56
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:23:9-55
 	android:name
-		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:24:19-53
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:23:19-53
 activity#com.example.nbc_givehub.MainPageActivity
-ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:25:9-54
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:24:9-53
 	android:name
-		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:25:19-51
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:24:19-51
 activity#com.example.nbc_givehub.MyPageActivity
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:25:9-52
+	android:name
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:25:19-49
+activity#com.example.nbc_givehub.SignUpActivity
 ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:26:9-52
 	android:name
 		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:26:19-49
-activity#com.example.nbc_givehub.SignUpActivity
-ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:27:9-52
-	android:name
-		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:27:19-49
 uses-sdk
 INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml
