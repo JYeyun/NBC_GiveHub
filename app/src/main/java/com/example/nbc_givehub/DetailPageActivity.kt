@@ -32,6 +32,7 @@ class DetailPageActivity : AppCompatActivity() {
 
     private fun setContents(data: String) {
         val title = findViewById<TextView>(R.id.tv_detail_title)
+        val userImage = findViewById<ImageView>(R.id.img_detail_profile)
         val usetName = findViewById<TextView>(R.id.tv_detail_user)
         val contents = findViewById<TextView>(R.id.tv_detail_contents)
         val postImage = findViewById<ImageView>(R.id.img_detail_post_image)
@@ -39,6 +40,11 @@ class DetailPageActivity : AppCompatActivity() {
         val titlePattern = "postTitle=(.*?),".toRegex()
         val titleMatch = titlePattern.find(data)?.groupValues?.get(1)
         title.setText(titleMatch.toString())
+
+        val userImagePattern = "userImage=(.*?),".toRegex()
+        val userImageMatch = userImagePattern.find(data)?.groupValues?.get(1)
+        val userImageResource = resources.getIdentifier(userImageMatch, "drawable", packageName)
+        userImage.setImageResource(userImageResource)
 
         val userPattern = "userName=(.*?),".toRegex()
         val userMatch = userPattern.find(data)?.groupValues?.get(1)
