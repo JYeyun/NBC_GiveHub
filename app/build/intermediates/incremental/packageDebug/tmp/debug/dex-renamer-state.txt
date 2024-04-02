@@ -1,4 +1,4 @@
-#Tue Apr 02 17:59:04 KST 2024
+#Tue Apr 02 18:55:17 KST 2024
 base.0=/Users/neo/NBC_team/NBC_GiveHub/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/neo/NBC_team/NBC_GiveHub/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/neo/NBC_team/NBC_GiveHub/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex

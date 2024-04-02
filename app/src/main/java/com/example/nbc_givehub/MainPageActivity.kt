@@ -56,6 +56,7 @@ class MainPageActivity : AppCompatActivity() {
             val intent = Intent(this, DetailPageActivity::class.java)
             intent.putExtra("data", clickedItem.toString())
             startActivity(intent)
+            slideLeft()
         }
     }
 
@@ -64,6 +65,7 @@ class MainPageActivity : AppCompatActivity() {
         val intent = Intent(this, MyPageActivity::class.java)
         intent.putExtra("id", id)
         startActivity(intent)
+        slideLeft()
     }
 
     private fun doLogout() {
@@ -85,6 +87,7 @@ class MainPageActivity : AppCompatActivity() {
                     DialogInterface.BUTTON_POSITIVE -> {
                         toastLogout()
                         finish()
+                        slideUp()
                     }
                 }
             }
