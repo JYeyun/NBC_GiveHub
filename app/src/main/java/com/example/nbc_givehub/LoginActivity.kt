@@ -27,7 +27,6 @@ class LoginActivity : AppCompatActivity() {
         userId = findViewById(R.id.et_id)
         userPw = findViewById(R.id.et_pw)
 
-
         signUpActivityResultLauncher =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 if (result.resultCode == Activity.RESULT_OK) {
@@ -42,12 +41,11 @@ class LoginActivity : AppCompatActivity() {
         goSignUp()
     }
 
-
     private fun checkIdAndPassword() {
         if (userId.text.isBlank()) {
-            Toast.makeText(this, "이메일을 입력하세요", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
         } else if (userPw.text.isBlank()) {
-            Toast.makeText(this, "비밀번호를 입력하세요", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.pwHint, Toast.LENGTH_SHORT).show()
         } else checkAll()
     }
 
@@ -55,6 +53,11 @@ class LoginActivity : AppCompatActivity() {
         val inputId = userId.text.toString()
         val inputPw = userPw.text.toString()
         //Todo 아이디 비교 로직 if (inputId == )
+
+        //임시로 admin 아이디로 로그인 가능하게 구현해놓았습니다.
+        if (inputId == "admin" && inputPw == "admin") {
+            sendToMain()//로그인 성공 시 메인 화면으로 이동 및 데이터 전달
+        }
     }
 
     private fun goSignUp() {
@@ -64,4 +67,9 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    private fun sendToMain() { //메인 화면으로 Id 전달
+        val intent = Intent(this, MainPageActivity::class.java)
+        intent.putExtra("id", userId.text.toString())
+        startActivity(intent)
+    }
 }
