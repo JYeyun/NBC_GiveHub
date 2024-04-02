@@ -79,6 +79,7 @@
             android:layout_height="match_parent"
             android:dividerHeight="0px"
             android:divider="@color/main_background"
+            android:listSelector="@color/main_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
