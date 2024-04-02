@@ -68,12 +68,13 @@ class MainPageActivity : AppCompatActivity() {
     private fun doLogout() {
         //로그아웃 모달 띄움
         val dialog = AlertDialog.Builder(this)
-        dialog.setTitle("로그아웃 하시겠습니까?")
-        dialog.setMessage("다음에 또 멋진 기술 공유로 만나요!")
+        var temp =
+        dialog.setTitle(R.string.logoutMessageTitle)
+        dialog.setMessage(R.string.logoutMessageContents)
         dialog.setIcon(R.drawable.give_hub)
 
         fun toastLogout() {
-            Toast.makeText(this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.logoutComplete, Toast.LENGTH_SHORT).show()
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
@@ -88,8 +89,8 @@ class MainPageActivity : AppCompatActivity() {
                 }
             }
         }
-        dialog.setPositiveButton("로그아웃", dialogListener)
-        dialog.setNegativeButton("취소", null)
+        dialog.setPositiveButton(R.string.logoutDo, dialogListener)
+        dialog.setNegativeButton(R.string.cancel, null)
         dialog.show()
     }
 }

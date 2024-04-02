@@ -110,7 +110,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/sgin_up_bt"
-        android:text="@string/sginUpBt"
+        android:text="@string/signUpBt"
         android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintEnd_toStartOf="@+id/singUpBack"

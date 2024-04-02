@@ -45,9 +45,9 @@ class LoginActivity : AppCompatActivity() {
 
     private fun checkIdAndPassword() {
         if (userId.text.isBlank()) {
-            Toast.makeText(this, "이메일을 입력하세요", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
         } else if (userPw.text.isBlank()) {
-            Toast.makeText(this, "비밀번호를 입력하세요", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, R.string.pwHint, Toast.LENGTH_SHORT).show()
         } else checkAll()
     }
 
