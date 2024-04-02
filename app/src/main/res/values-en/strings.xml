@@ -17,4 +17,5 @@
     <string name="signUpBt">Create an account</string>
     <string name="loginTitle">Sign in to GiveHub</string>
     <string name="cancel">Cancel</string>
+    <string name="idPwCheck">We do not recognize the ID or Password</string>
 </resources>

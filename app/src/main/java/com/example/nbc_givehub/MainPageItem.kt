@@ -11,7 +11,7 @@ data class MainPageItem(
         fun dummyPostData(id: String): ArrayList<MainPageItem> {
             val dummyPostList = arrayListOf(
                 MainPageItem(
-                    "give_hub",
+                    "img1",
                     id,
                     "img_post1",
                     "Fragment LifeCycle",
@@ -27,8 +27,8 @@ data class MainPageItem(
                             "onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy()가 포함되어 있다."
                 ),
                 MainPageItem(
-                    "give_hub",
-                    "작성자2",
+                    "img5",
+                    "neoneoneo123",
                     "img_post2",
                     "배열과 컬렉션 편",
                     "코틀린에서 배열을 다루기 위한 다양한 유형들이 있다.\n" +
@@ -44,7 +44,7 @@ data class MainPageItem(
                             "3. sorted는 바로 오름차순한 값을 출력"
                 ),
                 MainPageItem(
-                    "give_hub",
+                    "img1",
                     id,
                     "img_post3",
                     "Activity LifeCycle을 알아보자",
@@ -56,8 +56,8 @@ data class MainPageItem(
                             " 액티비티가 처음으로 시작되지 않은 경우에만(앱을 백그라운드에서 포그라운드로 다시 시작하는 경우에만) 호출하려는 코드를 배치하는 위치이다."
                 ),
                 MainPageItem(
-                    "give_hub",
-                    "작성자4",
+                    "img4",
+                    "dkswlsgur123",
                     "img_post4",
                     "안드로이드 스튜디오 padding, margin 뽀개기",
                     "android:padding=\"\" → 안쪽 전체 여백\n" +
@@ -77,10 +77,10 @@ data class MainPageItem(
                             "android:layout_margin Horizontall =\"\" → 바깥쪽 가로 여백"
                 ),
                 MainPageItem(
-                    "give_hub",
-                    "작성자5",
+                    "img2",
+                    "jyy3637",
                     "img_post5",
-                    "Activity Stack가 뭘까?",
+                    "Activity Stack이 뭘까?",
                     "Activity Stack 관리 : AndroidManifest의 LaunchMode의 옵션으로 관리\n" +
                             "android:launchMode=\"standard\"\n" +
                             "새 인스턴스를 생성하고 여러 번 스턴스화될 수 있다.각 인스턴스는 서로 다른 Task에 들어있으며 Task에는 여러 인스턴스가 있을 수 있다.\n" +
