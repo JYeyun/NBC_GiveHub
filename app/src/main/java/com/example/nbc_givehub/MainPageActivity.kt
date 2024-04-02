@@ -40,7 +40,7 @@ class MainPageActivity : AppCompatActivity() {
 
         //마이페이지 이동
         myPageBtn.setOnClickListener {
-            goMyPage()
+            goMyPage(id)
         }
 
         //로그아웃
@@ -64,9 +64,10 @@ class MainPageActivity : AppCompatActivity() {
         }
     }
 
-    private fun goMyPage() {
+    private fun goMyPage(id:String) {
         //마이페이지로 이동
         val intent = Intent(this, MyPageActivity::class.java)
+        intent.putExtra("id", id)
         startActivity(intent)
     }
 
