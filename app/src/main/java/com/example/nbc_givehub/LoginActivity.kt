@@ -55,6 +55,8 @@ class LoginActivity : AppCompatActivity() {
         val inputId = userId.text.toString()
         val inputPw = userPw.text.toString()
         //Todo 아이디 비교 로직 if (inputId == )
+
+        //sendIdToMain()//로그인 성공 시 메인 화면으로 데이터 전달
     }
 
     private fun goSignUp() {
@@ -64,4 +66,8 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    private fun sendIdToMain() { //메인 화면으로 Id 전달
+        val intent = Intent(this, MainPageActivity::class.java)
+        intent.putExtra("id", userId.text)
+    }
 }

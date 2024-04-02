@@ -23,6 +23,28 @@ class MainPageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
 
+        //로그인 페이지에서 데이터 받아오기
+        val id = intent.getStringExtra("id")
+
+        //상호작용 버튼 선언
+        val myPageBtn = findViewById<FrameLayout>(R.id.btn_mypage)
+        val logoutBtn = findViewById<FrameLayout>(R.id.btn_logout)
+
+        //리스트뷰
+        makeListView()
+
+        //마이페이지 이동
+        myPageBtn.setOnClickListener {
+            goMyPage()
+        }
+
+        //로그아웃
+        logoutBtn.setOnClickListener {
+            doLogout()
+        }
+    }
+
+    private fun makeListView() {
         //화면에 리스트뷰 그려주기
         val itemAdapter = MainPageAdapter(this, itemList)
         val itemListView = findViewById<ListView>(R.id.mainListView)
@@ -35,42 +57,40 @@ class MainPageActivity : AppCompatActivity() {
             intent.putExtra("data", clickedItem.toString())
             startActivity(intent)
         }
+    }
 
-        //마이페이지 클릭 시
-        val myPageBtn = findViewById<FrameLayout>(R.id.btn_mypage)
-        myPageBtn.setOnClickListener {
-            val intent = Intent(this, MyPageActivity::class.java)
+    private fun goMyPage() {
+        //마이페이지로 이동
+        val intent = Intent(this, MyPageActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun doLogout() {
+        //로그아웃 모달 띄움
+        val dialog = AlertDialog.Builder(this)
+        dialog.setTitle("로그아웃 하시겠습니까?")
+        dialog.setMessage("다음에 또 멋진 기술 공유로 만나요!")
+        dialog.setIcon(R.drawable.give_hub)
+
+        fun toastLogout() {
+            Toast.makeText(this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
-        //로그아웃 클릭 시
-        val logoutBtn = findViewById<FrameLayout>(R.id.btn_logout)
-        logoutBtn.setOnClickListener {
-            val dialog = AlertDialog.Builder(this)
-            dialog.setTitle("로그아웃 하시겠습니까?")
-            dialog.setMessage("다음에 또 멋진 기술 공유로 만나요!")
-            dialog.setIcon(R.drawable.give_hub)
-
-            fun toastLogout() {
-                Toast.makeText(this, "로그아웃 되었습니다.", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, LoginActivity::class.java)
-                startActivity(intent)
-            }
-
-            val dialogListener = object : DialogInterface.OnClickListener {
-                override fun onClick(dialog: DialogInterface?, which: Int) {
-                    when (which) {
-                        DialogInterface.BUTTON_POSITIVE -> {
-                            toastLogout()
-                            finish()
-                        }
+        val dialogListener = object : DialogInterface.OnClickListener {
+            override fun onClick(dialog: DialogInterface?, which: Int) {
+                when (which) {
+                    DialogInterface.BUTTON_POSITIVE -> {
+                        toastLogout()
+                        finish()
                     }
                 }
             }
-            dialog.setPositiveButton("로그아웃", dialogListener)
-            dialog.setNegativeButton("취소", null)
-            dialog.show()
         }
+        dialog.setPositiveButton("로그아웃", dialogListener)
+        dialog.setNegativeButton("취소", null)
+        dialog.show()
     }
 }
 
