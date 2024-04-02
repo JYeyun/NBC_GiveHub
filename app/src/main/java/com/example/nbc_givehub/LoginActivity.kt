@@ -27,7 +27,6 @@ class LoginActivity : AppCompatActivity() {
         userId = findViewById(R.id.et_id)
         userPw = findViewById(R.id.et_pw)
 
-
         signUpActivityResultLauncher =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 if (result.resultCode == Activity.RESULT_OK) {
@@ -41,7 +40,6 @@ class LoginActivity : AppCompatActivity() {
         }
         goSignUp()
     }
-
 
     private fun checkIdAndPassword() {
         if (userId.text.isBlank()) {
