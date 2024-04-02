@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintLeft_toRightOf="@+id/mypage_img"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="My page"
+        android:text="@string/myPage"
         android:textSize="15sp"
         android:layout_marginTop="27dp"
         android:layout_marginLeft="10dp"/>
@@ -55,7 +55,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mypage_profile_img"
-        android:text="name"
+        android:text="@string/name"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="15dp"/>
