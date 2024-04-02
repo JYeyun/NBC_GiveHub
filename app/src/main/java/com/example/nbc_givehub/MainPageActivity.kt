@@ -3,7 +3,6 @@ package com.example.nbc_givehub
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Adapter
 import android.widget.FrameLayout
 import android.widget.ListView
 import android.widget.Toast
@@ -11,20 +10,26 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 class MainPageActivity : AppCompatActivity() {
-    val itemList = arrayListOf(
-        MainPageItem("give_hub", "작성자1", "mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
-        MainPageItem("give_hub", "작성자2", "mainpage_img_thumnail", "포스트2 제목", "포스트2 내용"),
-        MainPageItem("give_hub", "작성자3", "mainpage_img_thumnail", "포스트3 제목", "포스트3 내용"),
-        MainPageItem("give_hub", "작성자4", "mainpage_img_thumnail", "포스트4 제목", "포스트4 내용"),
-        MainPageItem("give_hub", "작성자5", "mainpage_img_thumnail", "포스트5 제목", "포스트5 내용")
-    )
+
+    //더미포스트 변수
+    val itemList = ArrayList<MainPageItem>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mainpage)
 
         //로그인 페이지에서 데이터 받아오기
-        val id = intent.getStringExtra("id")
+        val id = intent.getStringExtra("id") ?: "Unknown"
+
+        //더미포스트 추가
+        val dummyPost = listOf(
+            MainPageItem("give_hub", id, "mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
+            MainPageItem("give_hub", "작성자2", "mainpage_img_thumnail", "포스트2 제목", "포스트2 내용"),
+            MainPageItem("give_hub", id, "mainpage_img_thumnail", "포스트3 제목", "포스트3 내용"),
+            MainPageItem("give_hub", "작성자4", "mainpage_img_thumnail", "포스트4 제목", "포스트4 내용"),
+            MainPageItem("give_hub", "작성자5", "mainpage_img_thumnail", "포스트5 제목", "포스트5 내용")
+        )
+        itemList.addAll(dummyPost)
 
         //상호작용 버튼 선언
         val myPageBtn = findViewById<FrameLayout>(R.id.btn_mypage)
