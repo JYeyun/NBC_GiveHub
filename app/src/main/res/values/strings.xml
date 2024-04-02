@@ -1,12 +1,35 @@
 <resources>
+    <!-- common -->
     <string name="app_name">NBC_Givehub</string>
-    <string name="name">Name</string>
-    <string name="id">id</string>
-    <string name="pw">password</string>
-    <string name="nameHint">Enter Your name</string>
-    <string name="idHint">Enter Your Email</string>
-    <string name="pwHint">Enter Your Password</string>
-    <string name="sginUpBt">Create</string>
-    <string name="back">Back</string>
-    <string name="pwPattern">영문, 특수문자 8 ~ 20자 이내에 입력해 주세요.</string>
+    <string name="myPage" translatable="false">My page</string>
+    <string name="back">뒤로가기</string>
+    <string name="cancel">취소</string>
+    <string name="id">아이디</string>
+    <string name="name">이름</string>
+    <string name="logout" translatable="false">Logout</string>
+
+    <!-- login page -->
+    <string name="pw">비밀번호</string>
+    <string name="nameHint">이름을 입력해주세요.</string>
+    <string name="idHint">Email을 입력해주세요.</string>
+    <string name="pwHint">비밀번호를 입력해주세요.</string>
+    <string name="signInBt">로그인</string>
+    <string name="signUpBt">회원가입</string>
+    <string name="pwPattern">숫자와 대문자를 포함하여 8 ~ 20자 이내에 입력해 주세요.</string>
+    <string name="loginTitle">GiveHub에 오신걸 환영합니다!</string>
+
+    <!-- signup page -->
+
+    <!-- main page -->
+    <string name="logoutMessageTitle">로그아웃 하시겠습니까?</string>
+    <string name="logoutMessageContents">다음에 또 멋진 기술 공유로 만나요!</string>
+    <string name="logoutComplete">로그아웃 되었습니다.</string>
+    <string name="logoutDo">로그아웃</string>
+
+    <!-- my page -->
+
+    <!-- detail page -->
+
 </resources>
+
+
