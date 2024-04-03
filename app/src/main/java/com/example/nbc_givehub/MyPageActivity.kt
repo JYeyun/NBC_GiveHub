@@ -47,24 +47,11 @@ class MyPageActivity : AppCompatActivity() {
 
         // 랜덤 이미지 적용
         var ranimg = random.nextInt(3)
-        var imgnum = ""
         when(ranimg){
-            0 -> {
-                img.setImageResource(R.drawable.img1)
-                imgnum = "img1"
-            }
-            1 -> {
-                img.setImageResource(R.drawable.img2)
-                imgnum = "img2"
-            }
-            2 -> {
-                img.setImageResource(R.drawable.img3)
-                imgnum = "img3"
-            }
-            3 -> {
-                img.setImageResource(R.drawable.img4)
-                imgnum = "img4"
-            }
+            0 -> img.setImageResource(R.drawable.img1)
+            1 -> img.setImageResource(R.drawable.img2)
+            2 -> img.setImageResource(R.drawable.img3)
+            3 -> img.setImageResource(R.drawable.img4)
         }
 
         // 리스트뷰 더미 리스트
