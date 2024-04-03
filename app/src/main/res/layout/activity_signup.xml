@@ -181,3 +181,8 @@
         app:layout_constraintTop_toTopOf="@+id/singUpPw" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+1.전체적으로 라인 내리고
+2. 유효성 검사 꽉안차게
+3. 회원가입 영어 버전 Create-->

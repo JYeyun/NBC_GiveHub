@@ -109,3 +109,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_signIn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+1.아이디, et 라인 맞추기
+2. 전체적으로 밑으로 내리기
+-->
