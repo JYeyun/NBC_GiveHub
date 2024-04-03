@@ -37,22 +37,24 @@
     <Button
         android:id="@+id/mypage_edit"
         android:layout_width="110dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="edit"
-        android:backgroundTint="@color/main_green"
+        android:backgroundTint="@color/main_gray"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
         android:visibility="visible"/>
     <Button
         android:id="@+id/mypage_complete"
         android:layout_width="110dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="complete"
-        android:backgroundTint="@color/main_green"
+        android:backgroundTint="@color/main_gray"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
         android:visibility="gone"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -72,13 +74,13 @@
         android:id="@+id/mypage_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/mypage_profile_img"
+        app:layout_constraintRight_toRightOf="@+id/mypage_profile_img"
         app:layout_constraintTop_toBottomOf="@+id/mypage_profile_img"
         android:text="@string/name"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="70dp"/>
+        android:layout_marginTop="15dp" />
     <TextView
         android:id="@+id/mypage_language"
         android:layout_width="wrap_content"
@@ -97,7 +99,7 @@
         app:layout_constraintLeft_toRightOf="@+id/mypage_profile_img"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Android / kotlin"
+        android:hint="language"
         android:textSize="15sp"
         android:layout_marginTop="110dp"
         android:inputType="textVisiblePassword"
@@ -121,7 +123,7 @@
         app:layout_constraintLeft_toRightOf="@+id/mypage_profile_img"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mypage_language"
-        android:text="ENTP"
+        android:hint="mbti"
         android:textSize="15sp"
         android:layout_marginTop="10dp"
         android:inputType="textVisiblePassword"
@@ -145,7 +147,7 @@
         app:layout_constraintLeft_toRightOf="@+id/mypage_profile_img"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mypage_mbti"
-        android:text="git.com"
+        android:hint="git address"
         android:textSize="15sp"
         android:layout_marginTop="10dp"
         android:inputType="textVisiblePassword"
@@ -169,11 +171,18 @@
         app:layout_constraintLeft_toRightOf="@+id/mypage_profile_img"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mypage_git"
-        android:text="tistory.com"
+        android:hint="blog address"
         android:textSize="15sp"
         android:layout_marginTop="10dp"
         android:inputType="textVisiblePassword"
         android:visibility="gone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/mypage_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/main_gray"
+        android:layout_marginTop="20dp"/>
     <ListView
         android:id="@+id/mypage_listview"
         android:layout_width="match_parent"

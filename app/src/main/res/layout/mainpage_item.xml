@@ -76,7 +76,7 @@
                 android:id="@+id/post_image"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:background="@drawable/mainpage_fl_image_line_rec"
+                android:background="@drawable/mainpage_fl_line_rec"
                 android:padding="1dp"
                 android:cropToPadding="true"
                 android:layout_gravity="center"
