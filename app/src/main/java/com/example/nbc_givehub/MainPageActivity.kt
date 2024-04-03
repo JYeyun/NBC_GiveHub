@@ -54,7 +54,11 @@ class MainPageActivity : AppCompatActivity() {
         itemListView.setOnItemClickListener{ adapterView, view, i, l ->
             val clickedItem = itemList[i]
             val intent = Intent(this, DetailPageActivity::class.java)
-            intent.putExtra("data", clickedItem.toString())
+            intent.putExtra("userName", clickedItem.userName)
+            intent.putExtra("userImage", clickedItem.userImage)
+            intent.putExtra("postImage", clickedItem.postImage)
+            intent.putExtra("postSummary", clickedItem.postSummary)
+            intent.putExtra("postTitle", clickedItem.postTitle)
             startActivity(intent)
             slideLeft()
         }
