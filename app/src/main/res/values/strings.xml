@@ -15,7 +15,7 @@
     <string name="pwHint">비밀번호를 입력해주세요.</string>
     <string name="signInBt">로그인</string>
     <string name="signUpBt">회원가입</string>
-    <string name="pwPattern">숫자와 대문자를 포함하여 8 ~ 20자 이내에 입력해 주세요.</string>
+    <string name="pwPattern">숫자,대문자,특수문자를 포함하여 8 ~ 20자 이내에 입력해 주세요.</string>
     <string name="loginTitle">GiveHub에 오신걸 환영합니다!</string>
     <string name="idPwCheck">아이디 혹은 비밀번호가 틀렸습니다.</string>
 
