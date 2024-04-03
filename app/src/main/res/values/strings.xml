@@ -11,7 +11,7 @@
     <!-- login page -->
     <string name="pw">비밀번호</string>
     <string name="nameHint">이름을 입력해주세요.</string>
-    <string name="idHint">Email을 입력해주세요.</string>
+    <string name="idHint">아이디를 입력해주세요.</string>
     <string name="pwHint">비밀번호를 입력해주세요.</string>
     <string name="signInBt">로그인</string>
     <string name="signUpBt">회원가입</string>

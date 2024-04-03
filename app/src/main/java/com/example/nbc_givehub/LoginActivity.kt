@@ -10,6 +10,9 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.nbc_givehub.UserData.Companion.createUser
+import com.example.nbc_givehub.UserData.Companion.datalist
+import com.example.nbc_givehub.UserData.Companion.showlist
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var signInBtn: Button
@@ -20,13 +23,6 @@ class LoginActivity : AppCompatActivity() {
     private var id = ""
     private var pw = ""
 
-    val userInfo = listOf(
-        UserInfo("정예윤", "Boss", "1"),
-        UserInfo("정지연", "Captain", "2"),
-        UserInfo("윤영진", "1", "3"),
-        UserInfo("안진혁", "2", "4"),
-        UserInfo("장규식", "3", "5")
-    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,8 +38,8 @@ class LoginActivity : AppCompatActivity() {
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 if (result.resultCode == Activity.RESULT_OK) {
                     val data: Intent? = result.data
-                    id = data?.getStringExtra("SingIn_ID")?:""
-                    pw = data?.getStringExtra("SingIn_PW")?:""
+                    id = data?.getStringExtra("SingIn_ID") ?: ""
+                    pw = data?.getStringExtra("SingIn_PW") ?: ""
                     userId.setText(id)
 
                     //Todo 이메일 데이터 가져오기
@@ -55,6 +51,7 @@ class LoginActivity : AppCompatActivity() {
             checkIdAndPassword()
         }
         goSignUp()
+        showlist()
     }
 
     private fun checkIdAndPassword() {//email과 password란에 값을 입력했는 지 확인하는 함수
@@ -68,16 +65,15 @@ class LoginActivity : AppCompatActivity() {
     private fun checkAll() { // 아이디를 비교하는 함수
         val inputId = userId.text.toString()
         val inputPw = userPw.text.toString()
-        val user = userInfo.find { it.Id == inputId && it.Pw == inputPw }
+        val user = datalist.find { it.id == inputId && it.password == inputPw }
         if (user != null) {
-            sendToMain(user.Id)
-        }else if(inputId == id && inputPw == pw){
-            intent.putExtra("id",id)
-            intent.putExtra("pw",pw)
+            sendToMain(user.id)
+        } else if (inputId == id && inputPw == pw) {
+            intent.putExtra("id", id)
+            intent.putExtra("pw", pw)
             sendToMain(id)
-        }
-        else
-            Toast.makeText(this,R.string.idPwCheck, Toast.LENGTH_SHORT).show()
+        } else
+            Toast.makeText(this, R.string.idPwCheck, Toast.LENGTH_SHORT).show()
     }
 
     //회원가입 페이지에서 이메일만 가져옴
@@ -99,11 +95,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onStop() {
         super.onStop()
         userId.text.clear()
+        userPw.text.clear()
     }
 
-    data class UserInfo(
-        val name: String,
-        val Id: String,
-        val Pw: String
-    )
 }

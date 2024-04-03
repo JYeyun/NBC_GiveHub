@@ -5,7 +5,7 @@
     <string name="id">ID</string>
     <string name="pw">Password</string>
     <string name="nameHint">Enter your name</string>
-    <string name="idHint">Enter your Email</string>
+    <string name="idHint">Enter your id</string>
     <string name="pwHint">Enter your password</string>
     <string name="back">Back</string>
     <string name="pwPattern">Your password must be 8~20 characters and should contain at-least 1 uppercase, 1 numeric characters.</string>
