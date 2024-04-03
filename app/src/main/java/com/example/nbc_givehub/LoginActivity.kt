@@ -57,7 +57,7 @@ class LoginActivity : AppCompatActivity() {
         goSignUp()
     }
 
-    private fun checkIdAndPassword() {
+    private fun checkIdAndPassword() {//email과 password란에 값을 입력했는 지 확인하는 함수
         if (userId.text.isBlank()) {
             Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
         } else if (userPw.text.isBlank()) {
@@ -65,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
         } else checkAll()
     }
 
-    private fun checkAll() {
+    private fun checkAll() { // 아이디를 비교하는 함수
         val inputId = userId.text.toString()
         val inputPw = userPw.text.toString()
         val user = userInfo.find { it.Id == inputId && it.Pw == inputPw }
@@ -81,7 +81,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     //회원가입 페이지에서 이메일만 가져옴
-    private fun goSignUp() {
+    private fun goSignUp() { //회원가입 버튼 누르기
         signUpBtn.setOnClickListener {
             val signUpIntent = Intent(this, SignUpActivity::class.java)
             signUpActivityResultLauncher.launch(signUpIntent)
@@ -94,6 +94,11 @@ class LoginActivity : AppCompatActivity() {
         intent.putExtra("id", logInName)
         startActivity(intent)
         slideLeft()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        userId.text.clear()
     }
 
     data class UserInfo(
