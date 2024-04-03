@@ -30,11 +30,9 @@ class MainPageAdapter(val context: Context, val itemList: ArrayList<MainPageItem
 
 
         val item = itemList[position]
-        val userImageResource = context.resources.getIdentifier(item.userImage, "drawable", context.packageName)
-        val postImageResource = context.resources.getIdentifier(item.postImage, "drawable", context.packageName)
-        userImage.setImageResource(userImageResource)
+        userImage.setImageResource(item.userImage)
         userName.text = item.userName
-        postImage.setImageResource(postImageResource)
+        postImage.setImageResource(item.postImage)
         postName.text = item.postTitle
         postContents.text = item.postSummary
 

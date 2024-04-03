@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.nbc_givehub.MainPageItem.Companion.dummyPostData
 
 class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -21,11 +22,8 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detailpage)
 
-        //포스트 데이터 넘겨 받음
-        val postData = intent.getStringExtra("data")
-
         //포스트 데이터 띄우기
-        setContents(postData ?: "데이터가 없습니다.")
+        setContents()
 
         //상호작용 버튼에 뷰 요소 넣기
         backBtn = findViewById(R.id.btn_detail_back)!!
@@ -63,36 +61,31 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun setContents(data: String) {
-        val title = findViewById<TextView>(R.id.tv_detail_title)
-        val userImage = findViewById<ImageView>(R.id.img_detail_profile)
-        val usetName = findViewById<TextView>(R.id.tv_detail_user)
-        val contents = findViewById<TextView>(R.id.tv_detail_contents)
-        val postImage = findViewById<ImageView>(R.id.img_detail_post_image)
+    private fun setContents() {
+        //포스트 데이터 넘겨 받음
+        val userName = intent.getStringExtra("userName")
+        val userImage = intent.getStringExtra("userImage")
+        val postImage = intent.getStringExtra("postImage")
+        val postTitle = intent.getStringExtra("postTitle")
+        val postSummary = intent.getStringExtra("postSummary")
 
-        val titlePattern = "postTitle=(.*?),".toRegex()
-        val titleMatch = titlePattern.find(data)?.groupValues?.get(1)
-        title.setText(titleMatch.toString())
+        //화면에 데이터 출력
+        val thisUsetName = findViewById<TextView>(R.id.tv_detail_user)
+        val thisUserImage = findViewById<ImageView>(R.id.img_detail_profile)
+        val thisPostImage = findViewById<ImageView>(R.id.img_detail_post_image)
+        val thisTitle = findViewById<TextView>(R.id.tv_detail_title)
+        val thisContents = findViewById<TextView>(R.id.tv_detail_contents)
 
-        val userImagePattern = "userImage=(.*?),".toRegex()
-        val userImageMatch = userImagePattern.find(data)?.groupValues?.get(1)
-        val userImageResource = resources.getIdentifier(userImageMatch, "drawable", packageName)
-        userImage.setImageResource(userImageResource)
+        thisUsetName.setText(userName)
 
-        val userPattern = "userName=(.*?),".toRegex()
-        val userMatch = userPattern.find(data)?.groupValues?.get(1)
-        usetName.setText(userMatch.toString())
+        val imageResource = resources.getIdentifier(postImage, "drawable", packageName)
+        thisPostImage.setImageResource(imageResource)
 
-        val imagePattern = "postImage=(.*?),".toRegex()
-        val imageMatch = imagePattern.find(data)?.groupValues?.get(1)
-        val imageResource = resources.getIdentifier(imageMatch, "drawable", packageName)
-        postImage.setImageResource(imageResource)
+        thisTitle.setText(postTitle)
 
-        var contentText = ""
-        val startIndex = data.indexOf("postSummary=") + "postSummary".length
-        if (startIndex >= "postSummary=".length) {
-            contentText = data.substring(startIndex + 1)
-        }
-        contents.setText(contentText)
+        val userImageResource = resources.getIdentifier(userImage, "drawable", packageName)
+        thisUserImage.setImageResource(userImageResource)
+
+        thisContents.setText(postSummary)
     }
 }
