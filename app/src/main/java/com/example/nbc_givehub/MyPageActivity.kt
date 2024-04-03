@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.nbc_givehub.MainPageItem.Companion.dummyPostData
 import com.example.nbc_givehub.UserData.Companion.showlist
 import java.util.Random
 
@@ -18,7 +19,7 @@ class MyPageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mypage)
 
-        val id = intent.getStringExtra("id")
+        val id = intent.getStringExtra("id")?: "Unknown"
 
         var img = findViewById<ImageView>(R.id.mypage_profile_img)
         var mp_name = findViewById<TextView>(R.id.mypage_name)
@@ -67,11 +68,11 @@ class MyPageActivity : AppCompatActivity() {
         }
 
         // 리스트뷰 더미 리스트
-        val itemList = arrayListOf(
-            MainPageItem(imgnum, userlist[login_user!!].name,"mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
-            MainPageItem(imgnum, userlist[login_user!!].name, "mainpage_img_thumnail", "포스트2 제목", "포스트2 내용"),
-            MainPageItem(imgnum, userlist[login_user!!].name, "mainpage_img_thumnail", "포스트3 제목", "포스트3 내용")
-        )
+        val itemList = ArrayList<MainPageItem>()
+        val dummyList = dummyPostData(id)
+        for(i in dummyList.indices){
+            if(dummyList[i].userName == id) itemList.add(dummyList[i])
+        }
 
         //화면에 리스트뷰 그려주기
         val itemAdapter = MainPageAdapter(this, itemList)
