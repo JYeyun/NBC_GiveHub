@@ -2,9 +2,6 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="NBC_GiveHub.NBC_Givehub.app">
-        <State />
-      </entry>
       <entry key="app">
         <State>
           <targetSelectedWithDropDown>
@@ -18,7 +15,7 @@
               </deviceKey>
             </Target>
           </targetSelectedWithDropDown>
-          <timeTargetWasSelectedWithDropDown value="2024-04-02T07:02:04.336873900Z" />
+          <timeTargetWasSelectedWithDropDown value="2024-04-03T07:19:56.612789900Z" />
         </State>
       </entry>
     </value>
