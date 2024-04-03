@@ -12,6 +12,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.nbc_givehub.UserData.Companion.createUser
 import java.util.regex.Pattern
 
 class SignUpActivity : AppCompatActivity() {
@@ -89,6 +90,7 @@ class SignUpActivity : AppCompatActivity() {
             }else{
                 //아이디 중복확인 후 결과가 참일 경우 회원정보를 리스트에 저장
                 if (idCheck(sginUpId.text.toString())){
+                    createUser(sginUpId.text.toString(), sginUpPw.text.toString(), sginUpName.text.toString())
 //                    Database.signUpName.add(sginUpName.text.toString())
 //                    Database.signUpId.add(sginUpId.text.toString())
 //                    Database.signUpPw.add(sginUpPw.text.toString())
@@ -145,8 +147,8 @@ class SignUpActivity : AppCompatActivity() {
     //중복 아이디 확인
     fun idCheck(id:String):Boolean{
         var boolean = true
-        val dummy = UserData.dummydata()
-        for (i in UserData.dummydata().indices){
+        val dummy = UserData.showlist()
+        for (i in UserData.showlist().indices){
             Log.d("ID확인","입력한 아이디${id} 비교하는 아이디:${dummy[i].id}")
             if(id == dummy[i].id.toString()){
                 boolean = false
