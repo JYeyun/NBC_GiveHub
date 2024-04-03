@@ -43,15 +43,11 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         //뒤로가기 버튼
         if (v?.id == R.id.btn_detail_back) {
-            Log.d("여기는 디테일 페이지", "뒤로가기 누르는건 감지가 된다")
             finish()
         }
 
         //더보기, 내용 접기 버튼
         if (v?.id == R.id.tv_more_less) {
-
-            Log.d("여기는 디테일 페이지", "누르는건 감지가 된다")
-
             val contents = findViewById<TextView>(R.id.tv_detail_contents)
 
             if (contents.layout.getEllipsisCount(contents.layout.lineCount - 1) > 0 ) {
