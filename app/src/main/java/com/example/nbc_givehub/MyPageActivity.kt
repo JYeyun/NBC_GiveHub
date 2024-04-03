@@ -18,6 +18,8 @@ class MyPageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mypage)
 
+        val id = intent.getStringExtra("id")
+
         var img = findViewById<ImageView>(R.id.mypage_profile_img)
         var mp_name = findViewById<TextView>(R.id.mypage_name)
         var mp_language = findViewById<TextView>(R.id.mypage_language)
@@ -34,14 +36,13 @@ class MyPageActivity : AppCompatActivity() {
         var edit_blog = findViewById<EditText>(R.id.mypage_edit_blog)
 
         //더미 데이터 적용 코드
-        val dummy = showlist()
-
-        val login_user = dummy.last()
-        mp_name.setText(login_user.name)
-        mp_language.setText(login_user.launguage)
-        mp_mbti.setText(login_user.mbti)
-        mp_git.setText(login_user.git)
-        mp_blog.setText(login_user.blog)
+        val userlist = showlist()
+        val login_user = userlist.indices.find{userlist[it].id == id}
+        mp_name.setText(userlist[login_user!!].name)
+        mp_language.setText(userlist[login_user!!].launguage)
+        mp_mbti.setText(userlist[login_user!!].mbti)
+        mp_git.setText(userlist[login_user!!].git)
+        mp_blog.setText(userlist[login_user!!].blog)
 
         // 랜덤 이미지 적용
         var ranimg = random.nextInt(3)
@@ -67,9 +68,9 @@ class MyPageActivity : AppCompatActivity() {
 
         // 리스트뷰 더미 리스트
         val itemList = arrayListOf(
-            MainPageItem(imgnum, login_user.name,"mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
-            MainPageItem(imgnum, login_user.name, "mainpage_img_thumnail", "포스트2 제목", "포스트2 내용"),
-            MainPageItem(imgnum, login_user.name, "mainpage_img_thumnail", "포스트3 제목", "포스트3 내용")
+            MainPageItem(imgnum, userlist[login_user!!].name,"mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
+            MainPageItem(imgnum, userlist[login_user!!].name, "mainpage_img_thumnail", "포스트2 제목", "포스트2 내용"),
+            MainPageItem(imgnum, userlist[login_user!!].name, "mainpage_img_thumnail", "포스트3 제목", "포스트3 내용")
         )
 
         //화면에 리스트뷰 그려주기
@@ -86,6 +87,11 @@ class MyPageActivity : AppCompatActivity() {
         }
 
         edit_btn.setOnClickListener {
+            edit_launguage.setText(userlist[login_user!!].launguage)
+            edit_mbti.setText(userlist[login_user!!].mbti)
+            edit_git.setText(userlist[login_user!!].git)
+            edit_blog.setText(userlist[login_user!!].blog)
+
             edit_btn.visibility = Button.INVISIBLE
             mp_language.visibility = TextView.INVISIBLE
             mp_mbti.visibility = TextView.INVISIBLE
@@ -103,6 +109,11 @@ class MyPageActivity : AppCompatActivity() {
             mp_mbti.text = edit_mbti.text
             mp_git.text = edit_git.text
             mp_blog.text = edit_blog.text
+
+            userlist[login_user!!].launguage = edit_launguage.text.toString()
+            userlist[login_user!!].mbti = edit_mbti.text.toString()
+            userlist[login_user!!].git = edit_git.text.toString()
+            userlist[login_user!!].blog = edit_blog.text.toString()
 
             edit_btn.visibility = Button.VISIBLE
             mp_language.visibility = TextView.VISIBLE
