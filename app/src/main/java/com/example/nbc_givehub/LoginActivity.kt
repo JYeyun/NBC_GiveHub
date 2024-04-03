@@ -43,6 +43,7 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
 
+
         signInBtn.setOnClickListener {
             checkIdAndPassword()
         }
@@ -64,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
         if (user != null) {
             sendToMain(user.Id)
         } else
-            Toast.makeText(this, "아이디 혹은 비밀번호가 틀렸습니다", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,R.string.idPwCheck, Toast.LENGTH_SHORT).show()
     }
 
     //회원가입 페이지에서 이메일만 가져옴
