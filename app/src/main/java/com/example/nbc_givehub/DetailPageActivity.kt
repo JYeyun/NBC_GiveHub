@@ -66,8 +66,8 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
     private fun setContents() {
         //포스트 데이터 넘겨 받음
         val userName = intent.getStringExtra("userName")
-        val userImage = intent.getStringExtra("userImage")
-        val postImage = intent.getStringExtra("postImage")
+        val userImage = intent.getIntExtra("userImage", 0)
+        val postImage = intent.getIntExtra("postImage", 0)
         val postTitle = intent.getStringExtra("postTitle")
         val postSummary = intent.getStringExtra("postSummary")
 
@@ -80,12 +80,12 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
 
         thisUsetName.setText(userName)
 
-        val imageResource = resources.getIdentifier(postImage, "drawable", packageName)
+        val imageResource = resources.getIdentifier(postImage.toString(), "drawable", packageName)
         thisPostImage.setImageResource(imageResource)
 
         thisTitle.setText(postTitle)
 
-        val userImageResource = resources.getIdentifier(userImage, "drawable", packageName)
+        val userImageResource = resources.getIdentifier(userImage.toString(), "drawable", packageName)
         thisUserImage.setImageResource(userImageResource)
 
         thisContents.setText(postSummary)

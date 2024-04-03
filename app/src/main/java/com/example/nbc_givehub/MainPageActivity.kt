@@ -3,6 +3,7 @@ package com.example.nbc_givehub
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.FrameLayout
 import android.widget.ListView
 import android.widget.Toast
@@ -57,8 +58,9 @@ class MainPageActivity : AppCompatActivity() {
             intent.putExtra("userName", clickedItem.userName)
             intent.putExtra("userImage", clickedItem.userImage)
             intent.putExtra("postImage", clickedItem.postImage)
-            intent.putExtra("postSummary", clickedItem.postSummary)
             intent.putExtra("postTitle", clickedItem.postTitle)
+            intent.putExtra("postSummary", clickedItem.postSummary)
+
             startActivity(intent)
             slideLeft()
         }
