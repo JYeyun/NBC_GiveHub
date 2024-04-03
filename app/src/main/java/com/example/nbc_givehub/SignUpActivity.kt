@@ -162,7 +162,3 @@ class SignUpActivity : AppCompatActivity() {
     }
 
 }
-
-//유효성 검사해서 안되면 회원가입이 안되게
-//유효성 검사 표시 다르게
-//유효성 이메일 형식이 아닌 그냥 아이디로
