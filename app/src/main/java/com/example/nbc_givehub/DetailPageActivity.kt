@@ -9,6 +9,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.nbc_givehub.MainPageItem.Companion.dummyPostData
 
@@ -20,6 +21,7 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_detailpage)
 
         //포스트 데이터 띄우기
@@ -64,8 +66,8 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
     private fun setContents() {
         //포스트 데이터 넘겨 받음
         val userName = intent.getStringExtra("userName")
-        val userImage = intent.getStringExtra("userImage")
-        val postImage = intent.getStringExtra("postImage")
+        val userImage = intent.getIntExtra("userImage", 0)
+        val postImage = intent.getIntExtra("postImage", 0)
         val postTitle = intent.getStringExtra("postTitle")
         val postSummary = intent.getStringExtra("postSummary")
 
@@ -78,12 +80,12 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
 
         thisUsetName.setText(userName)
 
-        val imageResource = resources.getIdentifier(postImage, "drawable", packageName)
+        val imageResource = resources.getIdentifier(postImage.toString(), "drawable", packageName)
         thisPostImage.setImageResource(imageResource)
 
         thisTitle.setText(postTitle)
 
-        val userImageResource = resources.getIdentifier(userImage, "drawable", packageName)
+        val userImageResource = resources.getIdentifier(userImage.toString(), "drawable", packageName)
         thisUserImage.setImageResource(userImageResource)
 
         thisContents.setText(postSummary)

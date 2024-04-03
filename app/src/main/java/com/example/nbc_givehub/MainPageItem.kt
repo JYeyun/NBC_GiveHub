@@ -8,11 +8,11 @@ data class MainPageItem(
     val postSummary: String,
 ) {
     companion object {
-        fun dummyPostData(id: String): ArrayList<MainPageItem> {
+        fun dummyPostData(): ArrayList<MainPageItem> {
             val dummyPostList = arrayListOf(
                 MainPageItem(
                     R.drawable.img1,
-                    id,
+                    "jyk0435",
                     R.drawable.img_post1,
                     "Fragment LifeCycle",
                     "각 Fragment 인스턴스에는 고유한 수명 주기가 있다. 사용자가 앱을 탐색하거나 앱의 상호작용할 때 프래그먼트는 화면에서 추가 또는 삭제되거나 화면에 들어가고 나오면서 수명 주기의 여러 상태 간에 전환하게 된다.\n" +
@@ -45,7 +45,7 @@ data class MainPageItem(
                 ),
                 MainPageItem(
                     R.drawable.img1,
-                    id,
+                    "jgs288",
                     R.drawable.img_post3,
                     "Activity LifeCycle을 알아보자",
                     "onCreate() 메서드에서는 액티비티의 일회성 초기화를 실행해야 하는데, onCreate() 메서드는 액티비티가 초기화된 직후(OS에서 메모리에 새로운 액티비티 객체를 만들 때) 한 번 호출이 된다.onCreate()가 실행되면 활동이 생성되었다고 간주된다.또한, onCreate() 메서드를 재정의할 때, 상위클래스 구현을 호출하여 활동 생성을 완료해야하는데, 이를 위해 액티비티 안에서 super.onCreate()를 즉시 호출해야한다. 이 사항은 다른 수명 주기 콜백 메서드의 경우에도 마찬가지로 적용이 필요하다.\n" +

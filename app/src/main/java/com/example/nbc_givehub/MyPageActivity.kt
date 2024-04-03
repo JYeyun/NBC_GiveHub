@@ -69,7 +69,7 @@ class MyPageActivity : AppCompatActivity() {
 
         // 리스트뷰 더미 리스트
         val itemList = ArrayList<MainPageItem>()
-        val dummyList = dummyPostData(id)
+        val dummyList = dummyPostData()
         for(i in dummyList.indices){
             if(dummyList[i].userName == id) itemList.add(dummyList[i])
         }

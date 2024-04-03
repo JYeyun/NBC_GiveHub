@@ -3,12 +3,15 @@ package com.example.nbc_givehub
 import android.content.DialogInterface
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.FrameLayout
 import android.widget.ListView
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.nbc_givehub.MainPageItem.Companion.dummyPostData
+import com.example.nbc_givehub.UserData.Companion.showlist
 
 class MainPageActivity : AppCompatActivity() {
 
@@ -17,13 +20,11 @@ class MainPageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_mainpage)
 
-        //로그인 페이지에서 데이터 받아오기
-        val id = intent.getStringExtra("id") ?: "Unknown"
-
         //더미포스트 생성 및 리스트뷰에 추가
-        val dummyPost = dummyPostData(id)
+        val dummyPost = dummyPostData()
         itemList.addAll(dummyPost)
 
         //상호작용 버튼 선언
@@ -35,7 +36,7 @@ class MainPageActivity : AppCompatActivity() {
 
         //마이페이지 이동
         myPageBtn.setOnClickListener {
-            goMyPage(id)
+            goMyPage()
         }
 
         //로그아웃
@@ -57,14 +58,17 @@ class MainPageActivity : AppCompatActivity() {
             intent.putExtra("userName", clickedItem.userName)
             intent.putExtra("userImage", clickedItem.userImage)
             intent.putExtra("postImage", clickedItem.postImage)
-            intent.putExtra("postSummary", clickedItem.postSummary)
             intent.putExtra("postTitle", clickedItem.postTitle)
+            intent.putExtra("postSummary", clickedItem.postSummary)
+
             startActivity(intent)
             slideLeft()
         }
     }
 
-    private fun goMyPage(id:String) {
+    private fun goMyPage() {
+        //로그인 페이지에서 현재 로그인한 ID 데이터 받아오기
+        val id = intent.getStringExtra("id") ?: "Unknown"
         //마이페이지로 이동
         val intent = Intent(this, MyPageActivity::class.java)
         intent.putExtra("id", id)
