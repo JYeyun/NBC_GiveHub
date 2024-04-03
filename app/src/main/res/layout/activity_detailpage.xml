@@ -18,8 +18,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="15dp"
-            android:paddingStart="15dp">
+            android:paddingStart="15dp"
+            android:paddingTop="15dp">
 
             <ImageButton
                 android:id="@+id/btn_detail_back"
@@ -121,11 +121,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp"
-                    android:lineSpacingExtra="5dp"
                     android:layout_marginBottom="10dp"
+                    android:lineSpacingExtra="5dp"
+                    android:maxLines="7"
+                    android:ellipsize="end"
                     android:text="내용내용내용내용내용내용내용내용내용내용내용\n내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용\n내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용\n내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용\n내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용\n내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용\n내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용\n내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용 끝~~"
                     android:textSize="16sp"
                     app:layout_constraintTop_toBottomOf="@id/img_detail_post_image" />
+
+                <TextView
+                    android:id="@+id/tv_more_less"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:text="@string/viewMore"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_detail_contents">
+
+
+                </TextView>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@ data class MainPageItem(
     val userName: String,
     val postImage: String,
     val postTitle: String,
-    val postSummary: String
+    val postSummary: String,
 ) {
     companion object {
         fun dummyPostData(id: String): ArrayList<MainPageItem> {
