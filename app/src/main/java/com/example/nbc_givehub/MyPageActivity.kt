@@ -65,25 +65,25 @@ class MyPageActivity : AppCompatActivity() {
             }
         }
 
-        // 리스트뷰 더미 리스트
-        val itemList = arrayListOf(
-            MainPageItem(imgnum, login_user.name,"mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
-            MainPageItem(imgnum, login_user.name, "mainpage_img_thumnail", "포스트2 제목", "포스트2 내용"),
-            MainPageItem(imgnum, login_user.name, "mainpage_img_thumnail", "포스트3 제목", "포스트3 내용")
-        )
-
-        //화면에 리스트뷰 그려주기
-        val itemAdapter = MainPageAdapter(this, itemList)
-        val itemListView = findViewById<ListView>(R.id.mypage_listview)
-        itemListView.adapter = itemAdapter
-
-        //특정 아이템 클릭 시
-        itemListView.setOnItemClickListener{ adapterView, view, i, l ->
-            val clickedItem = itemList[i]
-            val intent = Intent(this, DetailPageActivity::class.java)
-            intent.putExtra("data", clickedItem.toString())
-            startActivity(intent)
-        }
+//        //리스트뷰 더미 리스트
+//        val itemList = arrayListOf(
+//            MainPageItem(imgnum, login_user.name,"mainpage_img_thumnail", "포스트1 제목", "포스트1 내용"),
+//            MainPageItem(imgnum, login_user.name, "mainpage_img_thumnail", "포스트2 제목", "포스트2 내용"),
+//            MainPageItem(imgnum, login_user.name, "mainpage_img_thumnail", "포스트3 제목", "포스트3 내용")
+//        )
+//
+//        //화면에 리스트뷰 그려주기
+//        val itemAdapter = MainPageAdapter(this, itemList)
+//        val itemListView = findViewById<ListView>(R.id.mypage_listview)
+//        itemListView.adapter = itemAdapter
+//
+//        //특정 아이템 클릭 시
+//        itemListView.setOnItemClickListener{ adapterView, view, i, l ->
+//            val clickedItem = itemList[i]
+//            val intent = Intent(this, DetailPageActivity::class.java)
+//            intent.putExtra("data", clickedItem.toString())
+//            startActivity(intent)
+//        }
 
         edit_btn.setOnClickListener {
             edit_btn.visibility = Button.INVISIBLE
