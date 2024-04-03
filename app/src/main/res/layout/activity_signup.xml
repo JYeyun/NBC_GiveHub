@@ -23,6 +23,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:text="@string/name"
+        android:textColor="@color/black"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,6 +41,7 @@
         android:hint="@string/nameHint"
         android:inputType="text"
         android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +55,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:text="@string/id"
+        android:textColor="@color/black"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +73,7 @@
         android:hint="@string/idHint"
         android:inputType="textEmailAddress"
         android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,6 +86,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
         android:text="@string/pw"
+        android:textColor="@color/black"
         android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,17 +104,19 @@
         android:hint="@string/pwHint"
         android:inputType="textPassword"
         android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/signUpBt"
         android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
-        android:background="@drawable/sgin_up_bt"
+        android:background="@drawable/buttoncustom"
+        android:backgroundTint="@color/main_green"
         android:text="@string/signUpBt"
         android:textColor="@color/white"
         android:textSize="15dp"
@@ -118,35 +125,38 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/singUpBack"
         android:layout_width="120dp"
         android:layout_height="40dp"
+        android:background="@drawable/buttoncustom"
+        android:backgroundTint="@color/main_gray"
         android:text="@string/back"
+        android:textColor="@color/black"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/signUpBt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/signUpBt"
-        app:layout_constraintTop_toTopOf="@+id/signUpBt"
-        android:background="@drawable/sgun_up_back_bt"/>
+        app:layout_constraintTop_toTopOf="@+id/signUpBt" />
 
     <ImageView
         android:id="@+id/singUpNameCheck"
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginEnd="10dp"
+        android:background="@color/main_background"
         app:layout_constraintBottom_toBottomOf="@+id/singUpName"
         app:layout_constraintEnd_toEndOf="@+id/singUpName"
-        app:layout_constraintTop_toTopOf="@+id/singUpName"
-        android:background="@color/main_background" />
+        app:layout_constraintTop_toTopOf="@+id/singUpName" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
         android:text="@string/pwPattern"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/singUpPw" />
 
@@ -155,19 +165,24 @@
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginEnd="10dp"
+        android:background="@color/main_background"
         app:layout_constraintBottom_toBottomOf="@+id/singUpId"
         app:layout_constraintEnd_toEndOf="@+id/singUpId"
-        app:layout_constraintTop_toTopOf="@+id/singUpId"
-        android:background="@color/main_background" />
+        app:layout_constraintTop_toTopOf="@+id/singUpId" />
 
     <ImageView
         android:id="@+id/singUpPwCheck"
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginEnd="10dp"
+        android:background="@color/main_background"
         app:layout_constraintBottom_toBottomOf="@+id/singUpPw"
         app:layout_constraintEnd_toEndOf="@+id/singUpPw"
-        app:layout_constraintTop_toTopOf="@+id/singUpPw"
-        android:background="@color/main_background" />
+        app:layout_constraintTop_toTopOf="@+id/singUpPw" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+1.전체적으로 라인 내리고
+2. 유효성 검사 꽉안차게
+3. 회원가입 영어 버전 Create-->

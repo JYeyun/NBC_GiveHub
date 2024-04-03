@@ -17,6 +17,9 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var signUpActivityResultLauncher: ActivityResultLauncher<Intent>
     private lateinit var userId: EditText
     private lateinit var userPw: EditText
+    private var id = ""
+    private var pw = ""
+
     val userInfo = listOf(
         UserInfo("정예윤", "Boss", "1"),
         UserInfo("정지연", "Captain", "2"),
@@ -39,6 +42,10 @@ class LoginActivity : AppCompatActivity() {
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 if (result.resultCode == Activity.RESULT_OK) {
                     val data: Intent? = result.data
+                    id = data?.getStringExtra("SingIn_ID")?:""
+                    pw = data?.getStringExtra("SingIn_PW")?:""
+                    userId.setText(id)
+
                     //Todo 이메일 데이터 가져오기
                 }
             }
@@ -64,7 +71,12 @@ class LoginActivity : AppCompatActivity() {
         val user = userInfo.find { it.Id == inputId && it.Pw == inputPw }
         if (user != null) {
             sendToMain(user.Id)
-        } else
+        }else if(inputId == id && inputPw == pw){
+            intent.putExtra("id",id)
+            intent.putExtra("pw",pw)
+            sendToMain(id)
+        }
+        else
             Toast.makeText(this,R.string.idPwCheck, Toast.LENGTH_SHORT).show()
     }
 
@@ -73,7 +85,7 @@ class LoginActivity : AppCompatActivity() {
         signUpBtn.setOnClickListener {
             val signUpIntent = Intent(this, SignUpActivity::class.java)
             signUpActivityResultLauncher.launch(signUpIntent)
-            slideRight()
+            slideUp()
         }
     }
 
