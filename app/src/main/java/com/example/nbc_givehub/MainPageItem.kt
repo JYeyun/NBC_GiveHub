@@ -1,19 +1,19 @@
 package com.example.nbc_givehub
 
 data class MainPageItem(
-    val userImage: String,
+    val userImage: Int,
     val userName: String,
-    val postImage: String,
+    val postImage: Int,
     val postTitle: String,
-    val postSummary: String
+    val postSummary: String,
 ) {
     companion object {
-        fun dummyPostData(id: String): ArrayList<MainPageItem> {
+        fun dummyPostData(): ArrayList<MainPageItem> {
             val dummyPostList = arrayListOf(
                 MainPageItem(
-                    "img1",
-                    id,
-                    "img_post1",
+                    R.drawable.img1,
+                    "jyk0435",
+                    R.drawable.img_post1,
                     "Fragment LifeCycle",
                     "각 Fragment 인스턴스에는 고유한 수명 주기가 있다. 사용자가 앱을 탐색하거나 앱의 상호작용할 때 프래그먼트는 화면에서 추가 또는 삭제되거나 화면에 들어가고 나오면서 수명 주기의 여러 상태 간에 전환하게 된다.\n" +
                             "수명주기를 관리하기 위해 Fragment는 LifecycleOwner를 구현하여, getLifecycle() 메서드를 통해 액서스를 할 수 있는 Lifecycle 객체를 노출한다.\n" +
@@ -27,9 +27,9 @@ data class MainPageItem(
                             "onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy()가 포함되어 있다."
                 ),
                 MainPageItem(
-                    "img5",
+                    R.drawable.img5,
                     "neoneoneo123",
-                    "img_post2",
+                    R.drawable.img_post2,
                     "배열과 컬렉션 편",
                     "코틀린에서 배열을 다루기 위한 다양한 유형들이 있다.\n" +
                             " 크게 가변형 (배열의 값을 바꿀 수 있음)과 불변형(가변형 반대)가 있다.\n" +
@@ -44,9 +44,9 @@ data class MainPageItem(
                             "3. sorted는 바로 오름차순한 값을 출력"
                 ),
                 MainPageItem(
-                    "img1",
-                    id,
-                    "img_post3",
+                    R.drawable.img1,
+                    "jgs288",
+                    R.drawable.img_post3,
                     "Activity LifeCycle을 알아보자",
                     "onCreate() 메서드에서는 액티비티의 일회성 초기화를 실행해야 하는데, onCreate() 메서드는 액티비티가 초기화된 직후(OS에서 메모리에 새로운 액티비티 객체를 만들 때) 한 번 호출이 된다.onCreate()가 실행되면 활동이 생성되었다고 간주된다.또한, onCreate() 메서드를 재정의할 때, 상위클래스 구현을 호출하여 활동 생성을 완료해야하는데, 이를 위해 액티비티 안에서 super.onCreate()를 즉시 호출해야한다. 이 사항은 다른 수명 주기 콜백 메서드의 경우에도 마찬가지로 적용이 필요하다.\n" +
                             "onStart() 메서드는 onCreate() 직후에 호출된다.onStart()가 실행되면 액티비티가 화면에 표시되며, onCreate()와 달리 시스템에서 활동의 수명 주기 동안 여러 번 호출할 수 있다.onStart()는 onStop() 메서드와 상응하여 페어링된다. 사용자가 앱을 시작한 후 기기 홈 화면으로 돌아오면 액티비티가 중지되고, 더 이상 화면에 표시되지 않게 된다.\n" +
@@ -56,9 +56,9 @@ data class MainPageItem(
                             " 액티비티가 처음으로 시작되지 않은 경우에만(앱을 백그라운드에서 포그라운드로 다시 시작하는 경우에만) 호출하려는 코드를 배치하는 위치이다."
                 ),
                 MainPageItem(
-                    "img4",
+                    R.drawable.img4,
                     "dkswlsgur123",
-                    "img_post4",
+                    R.drawable.img_post4,
                     "안드로이드 스튜디오 padding, margin 뽀개기",
                     "android:padding=\"\" → 안쪽 전체 여백\n" +
                             "android:paddingBottom=\"\" → 안쪽 아래 여백\n" +
@@ -77,9 +77,9 @@ data class MainPageItem(
                             "android:layout_margin Horizontall =\"\" → 바깥쪽 가로 여백"
                 ),
                 MainPageItem(
-                    "img2",
+                    R.drawable.img2,
                     "jyy3637",
-                    "img_post5",
+                    R.drawable.img_post5,
                     "Activity Stack이 뭘까?",
                     "Activity Stack 관리 : AndroidManifest의 LaunchMode의 옵션으로 관리\n" +
                             "android:launchMode=\"standard\"\n" +

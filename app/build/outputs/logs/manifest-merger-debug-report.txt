@@ -1,5 +1,6 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
 ADDED from C:\Users\ajh98\Documents\GitHub\NBC_GiveHub\app\src\main\AndroidManifest.xml:2:1-29:12
 INJECTED from C:\Users\ajh98\Documents\GitHub\NBC_GiveHub\app\src\main\AndroidManifest.xml:2:1-29:12
 INJECTED from C:\Users\ajh98\Documents\GitHub\NBC_GiveHub\app\src\main\AndroidManifest.xml:2:1-29:12
@@ -313,3 +314,318 @@ action#androidx.profileinstaller.action.BENCHMARK_OPERATION
 ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ajh98\.gradle\caches\transforms-3\bfa0fd5e66e5b124ca6c30ebf14c6efd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
 	android:name
 		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\ajh98\.gradle\caches\transforms-3\bfa0fd5e66e5b124ca6c30ebf14c6efd\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+=======
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:1-29:12
+MERGED from [com.google.android.material:material:1.11.0] /Users/neo/.gradle/caches/transforms-3/252c46be41e809bdc0674b9e8aba5d57/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/neo/.gradle/caches/transforms-3/dfeb4f1f6f3883e8ee89927a449e3171/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/neo/.gradle/caches/transforms-3/7677cea81e71b7fbd2613cae74f01827/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/neo/.gradle/caches/transforms-3/b303aa1908a4815fe96d3b83419ad08e/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/neo/.gradle/caches/transforms-3/f402493f3195bf138cfa2d56633ef517/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/neo/.gradle/caches/transforms-3/3078e7a0c6074dddd82f5429c6a90753/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/neo/.gradle/caches/transforms-3/c16f9323d3579afdd12dbcb79b4a7643/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.0] /Users/neo/.gradle/caches/transforms-3/d5ca4936e5474f498684451373ac0633/transformed/activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/neo/.gradle/caches/transforms-3/e3edc9f1b10d545d2c2851ecfc6e4074/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/neo/.gradle/caches/transforms-3/06f7f61280020f17399311faebbe08ce/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/neo/.gradle/caches/transforms-3/c60b34ec23387a5fd23b52f44d9ad099/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/neo/.gradle/caches/transforms-3/389df05fdf4c773c31a786df5921467e/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/neo/.gradle/caches/transforms-3/1610bd1d7faff4b2b52004ee86e49670/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/neo/.gradle/caches/transforms-3/eb4be5267977aa210c4cba794922f228/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/neo/.gradle/caches/transforms-3/ee73441c7bd7206e9ceb818bd529bfe3/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/neo/.gradle/caches/transforms-3/5c6ec1c3113d8bd0c699b605bca32198/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/neo/.gradle/caches/transforms-3/a87db58c4e914fcba8d7be8422f02c81/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/neo/.gradle/caches/transforms-3/6ddd4c2d8560f81ee9e054e9b2ed269b/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.1.0] /Users/neo/.gradle/caches/transforms-3/61be6bfcdbd97e7ff24d9edcf183861b/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/neo/.gradle/caches/transforms-3/e01c465cba6f512ed35b2fb81f9185b9/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /Users/neo/.gradle/caches/transforms-3/5d02b7fb51f6e4c020437ee68848a8d9/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /Users/neo/.gradle/caches/transforms-3/a15976c116cafe92c0686bb7eb2f184d/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /Users/neo/.gradle/caches/transforms-3/02c143cfd2b0e5245b606da50fcfd711/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /Users/neo/.gradle/caches/transforms-3/6d92f09a4a9de6f686f2d3e0209181ca/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /Users/neo/.gradle/caches/transforms-3/459aac27a1e922d7b1544f8f8addcb04/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/neo/.gradle/caches/transforms-3/b87b79192188291a5f28866d2d200d14/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/neo/.gradle/caches/transforms-3/b2df8a111af8090825b8657c85587ea8/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/neo/.gradle/caches/transforms-3/d5c87b5f9a2b4c77d0c0987ea176c4fe/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/neo/.gradle/caches/transforms-3/6182448bf2941ef16e7ca147fdc92e65/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/neo/.gradle/caches/transforms-3/22ade7e1bd8f3145c634d57ebc88a71e/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/neo/.gradle/caches/transforms-3/aad16e1466e3c217a8fb077e901b7261/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/neo/.gradle/caches/transforms-3/228a3fe9836453cb356653069d363982/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/neo/.gradle/caches/transforms-3/963bbf64d203af33ee6b946fa3514d36/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/neo/.gradle/caches/transforms-3/645a239c7fe10cc0d9e526a19dff5fe4/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/neo/.gradle/caches/transforms-3/bd31f088753d026bf8906f9a8fe34490/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/neo/.gradle/caches/transforms-3/337d29dab625ca07af63b40b015e26ae/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/neo/.gradle/caches/transforms-3/e247bd1c6763c7ff78875c3f822adbc6/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/neo/.gradle/caches/transforms-3/7f003fe705b3d76452b1ae8ad264489d/transformed/circleimageview-3.1.0/AndroidManifest.xml:2:1-11:12
+	package
+		INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:5:5-27:19
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:5:5-27:19
+MERGED from [com.google.android.material:material:1.11.0] /Users/neo/.gradle/caches/transforms-3/252c46be41e809bdc0674b9e8aba5d57/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.11.0] /Users/neo/.gradle/caches/transforms-3/252c46be41e809bdc0674b9e8aba5d57/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/neo/.gradle/caches/transforms-3/dfeb4f1f6f3883e8ee89927a449e3171/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/neo/.gradle/caches/transforms-3/dfeb4f1f6f3883e8ee89927a449e3171/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/neo/.gradle/caches/transforms-3/aad16e1466e3c217a8fb077e901b7261/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/neo/.gradle/caches/transforms-3/aad16e1466e3c217a8fb077e901b7261/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/neo/.gradle/caches/transforms-3/228a3fe9836453cb356653069d363982/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/neo/.gradle/caches/transforms-3/228a3fe9836453cb356653069d363982/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/neo/.gradle/caches/transforms-3/7f003fe705b3d76452b1ae8ad264489d/transformed/circleimageview-3.1.0/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/neo/.gradle/caches/transforms-3/7f003fe705b3d76452b1ae8ad264489d/transformed/circleimageview-3.1.0/AndroidManifest.xml:9:5-20
+	android:extractNativeLibs
+		INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:10:9-41
+	android:fullBackupContent
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:8:9-54
+	android:roundIcon
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:11:9-54
+	tools:targetApi
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:14:9-29
+	android:icon
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:13:9-49
+	android:dataExtractionRules
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:7:9-65
+activity#com.example.nbc_givehub.LoginActivity
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:15:9-22:20
+	android:exported
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:15:19-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:20:27-74
+activity#com.example.nbc_givehub.DetailPageActivity
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:23:9-55
+	android:name
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:23:19-53
+activity#com.example.nbc_givehub.MainPageActivity
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:24:9-53
+	android:name
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:24:19-51
+activity#com.example.nbc_givehub.MyPageActivity
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:25:9-52
+	android:name
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:25:19-49
+activity#com.example.nbc_givehub.SignUpActivity
+ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:26:9-52
+	android:name
+		ADDED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml:26:19-49
+uses-sdk
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml
+INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.11.0] /Users/neo/.gradle/caches/transforms-3/252c46be41e809bdc0674b9e8aba5d57/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.11.0] /Users/neo/.gradle/caches/transforms-3/252c46be41e809bdc0674b9e8aba5d57/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/neo/.gradle/caches/transforms-3/dfeb4f1f6f3883e8ee89927a449e3171/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/neo/.gradle/caches/transforms-3/dfeb4f1f6f3883e8ee89927a449e3171/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/neo/.gradle/caches/transforms-3/7677cea81e71b7fbd2613cae74f01827/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/neo/.gradle/caches/transforms-3/7677cea81e71b7fbd2613cae74f01827/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/neo/.gradle/caches/transforms-3/b303aa1908a4815fe96d3b83419ad08e/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/neo/.gradle/caches/transforms-3/b303aa1908a4815fe96d3b83419ad08e/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/neo/.gradle/caches/transforms-3/f402493f3195bf138cfa2d56633ef517/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/neo/.gradle/caches/transforms-3/f402493f3195bf138cfa2d56633ef517/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/neo/.gradle/caches/transforms-3/3078e7a0c6074dddd82f5429c6a90753/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/neo/.gradle/caches/transforms-3/3078e7a0c6074dddd82f5429c6a90753/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/neo/.gradle/caches/transforms-3/c16f9323d3579afdd12dbcb79b4a7643/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/neo/.gradle/caches/transforms-3/c16f9323d3579afdd12dbcb79b4a7643/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.0] /Users/neo/.gradle/caches/transforms-3/d5ca4936e5474f498684451373ac0633/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/neo/.gradle/caches/transforms-3/d5ca4936e5474f498684451373ac0633/transformed/activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/neo/.gradle/caches/transforms-3/e3edc9f1b10d545d2c2851ecfc6e4074/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/neo/.gradle/caches/transforms-3/e3edc9f1b10d545d2c2851ecfc6e4074/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/neo/.gradle/caches/transforms-3/06f7f61280020f17399311faebbe08ce/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/neo/.gradle/caches/transforms-3/06f7f61280020f17399311faebbe08ce/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/neo/.gradle/caches/transforms-3/c60b34ec23387a5fd23b52f44d9ad099/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/neo/.gradle/caches/transforms-3/c60b34ec23387a5fd23b52f44d9ad099/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/neo/.gradle/caches/transforms-3/389df05fdf4c773c31a786df5921467e/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/neo/.gradle/caches/transforms-3/389df05fdf4c773c31a786df5921467e/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/neo/.gradle/caches/transforms-3/1610bd1d7faff4b2b52004ee86e49670/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/neo/.gradle/caches/transforms-3/1610bd1d7faff4b2b52004ee86e49670/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/neo/.gradle/caches/transforms-3/eb4be5267977aa210c4cba794922f228/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/neo/.gradle/caches/transforms-3/eb4be5267977aa210c4cba794922f228/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/neo/.gradle/caches/transforms-3/ee73441c7bd7206e9ceb818bd529bfe3/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/neo/.gradle/caches/transforms-3/ee73441c7bd7206e9ceb818bd529bfe3/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/neo/.gradle/caches/transforms-3/5c6ec1c3113d8bd0c699b605bca32198/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/neo/.gradle/caches/transforms-3/5c6ec1c3113d8bd0c699b605bca32198/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/neo/.gradle/caches/transforms-3/a87db58c4e914fcba8d7be8422f02c81/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/neo/.gradle/caches/transforms-3/a87db58c4e914fcba8d7be8422f02c81/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/neo/.gradle/caches/transforms-3/6ddd4c2d8560f81ee9e054e9b2ed269b/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/neo/.gradle/caches/transforms-3/6ddd4c2d8560f81ee9e054e9b2ed269b/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/neo/.gradle/caches/transforms-3/61be6bfcdbd97e7ff24d9edcf183861b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /Users/neo/.gradle/caches/transforms-3/61be6bfcdbd97e7ff24d9edcf183861b/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/neo/.gradle/caches/transforms-3/e01c465cba6f512ed35b2fb81f9185b9/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /Users/neo/.gradle/caches/transforms-3/e01c465cba6f512ed35b2fb81f9185b9/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /Users/neo/.gradle/caches/transforms-3/5d02b7fb51f6e4c020437ee68848a8d9/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /Users/neo/.gradle/caches/transforms-3/5d02b7fb51f6e4c020437ee68848a8d9/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /Users/neo/.gradle/caches/transforms-3/a15976c116cafe92c0686bb7eb2f184d/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /Users/neo/.gradle/caches/transforms-3/a15976c116cafe92c0686bb7eb2f184d/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /Users/neo/.gradle/caches/transforms-3/02c143cfd2b0e5245b606da50fcfd711/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /Users/neo/.gradle/caches/transforms-3/02c143cfd2b0e5245b606da50fcfd711/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /Users/neo/.gradle/caches/transforms-3/6d92f09a4a9de6f686f2d3e0209181ca/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /Users/neo/.gradle/caches/transforms-3/6d92f09a4a9de6f686f2d3e0209181ca/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /Users/neo/.gradle/caches/transforms-3/459aac27a1e922d7b1544f8f8addcb04/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /Users/neo/.gradle/caches/transforms-3/459aac27a1e922d7b1544f8f8addcb04/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/neo/.gradle/caches/transforms-3/b87b79192188291a5f28866d2d200d14/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /Users/neo/.gradle/caches/transforms-3/b87b79192188291a5f28866d2d200d14/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/neo/.gradle/caches/transforms-3/b2df8a111af8090825b8657c85587ea8/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/neo/.gradle/caches/transforms-3/b2df8a111af8090825b8657c85587ea8/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/neo/.gradle/caches/transforms-3/d5c87b5f9a2b4c77d0c0987ea176c4fe/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/neo/.gradle/caches/transforms-3/d5c87b5f9a2b4c77d0c0987ea176c4fe/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/neo/.gradle/caches/transforms-3/6182448bf2941ef16e7ca147fdc92e65/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/neo/.gradle/caches/transforms-3/6182448bf2941ef16e7ca147fdc92e65/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/neo/.gradle/caches/transforms-3/22ade7e1bd8f3145c634d57ebc88a71e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/neo/.gradle/caches/transforms-3/22ade7e1bd8f3145c634d57ebc88a71e/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/neo/.gradle/caches/transforms-3/aad16e1466e3c217a8fb077e901b7261/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/neo/.gradle/caches/transforms-3/aad16e1466e3c217a8fb077e901b7261/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/neo/.gradle/caches/transforms-3/228a3fe9836453cb356653069d363982/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/neo/.gradle/caches/transforms-3/228a3fe9836453cb356653069d363982/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/neo/.gradle/caches/transforms-3/963bbf64d203af33ee6b946fa3514d36/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/neo/.gradle/caches/transforms-3/963bbf64d203af33ee6b946fa3514d36/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/neo/.gradle/caches/transforms-3/645a239c7fe10cc0d9e526a19dff5fe4/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/neo/.gradle/caches/transforms-3/645a239c7fe10cc0d9e526a19dff5fe4/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/neo/.gradle/caches/transforms-3/bd31f088753d026bf8906f9a8fe34490/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/neo/.gradle/caches/transforms-3/bd31f088753d026bf8906f9a8fe34490/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/neo/.gradle/caches/transforms-3/337d29dab625ca07af63b40b015e26ae/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/neo/.gradle/caches/transforms-3/337d29dab625ca07af63b40b015e26ae/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/neo/.gradle/caches/transforms-3/e247bd1c6763c7ff78875c3f822adbc6/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/neo/.gradle/caches/transforms-3/e247bd1c6763c7ff78875c3f822adbc6/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/neo/.gradle/caches/transforms-3/7f003fe705b3d76452b1ae8ad264489d/transformed/circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/neo/.gradle/caches/transforms-3/7f003fe705b3d76452b1ae8ad264489d/transformed/circleimageview-3.1.0/AndroidManifest.xml:5:5-7:41
+	android:targetSdkVersion
+		INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/neo/NBC_team/NBC_GiveHub/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/neo/.gradle/caches/transforms-3/228a3fe9836453cb356653069d363982/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/neo/.gradle/caches/transforms-3/228a3fe9836453cb356653069d363982/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/neo/.gradle/caches/transforms-3/6e00744ea4c6586185601493ee02dd04/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.example.nbc_givehub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.example.nbc_givehub.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /Users/neo/.gradle/caches/transforms-3/7c26347ce8735a425d1ceeab7f4aef8d/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/neo/.gradle/caches/transforms-3/2c90e0f0a2b0ff080279307a97c2d6cd/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/neo/.gradle/caches/transforms-3/bfa0fd5e66e5b124ca6c30ebf14c6efd/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+>>>>>>> f028ef2f961ce50f10f8b04a8e6122e2971260db

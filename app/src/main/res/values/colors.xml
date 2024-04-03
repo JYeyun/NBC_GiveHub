@@ -6,4 +6,5 @@
     <color name="main_gray">#C1CBC5</color>
     <color name="main_green">#32B24F</color>
     <color name="main_stroke">#C8C8C8</color>
+    <color name="text_button">#2196F3</color>
 </resources>

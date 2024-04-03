@@ -30,6 +30,8 @@
     <!-- my page -->
 
     <!-- detail page -->
+    <string name="viewMore">더 보기 ▼</string>
+    <string name="viewLess">내용 접기 ▲</string>
 
 </resources>
 

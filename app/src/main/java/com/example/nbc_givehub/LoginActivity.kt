@@ -46,7 +46,6 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
 
-
         signInBtn.setOnClickListener {
             checkIdAndPassword()
         }
@@ -88,6 +87,7 @@ class LoginActivity : AppCompatActivity() {
     private fun sendToMain(logInName: String) { //메인 화면으로 Id 전달
         val intent = Intent(this, MainPageActivity::class.java)
         intent.putExtra("id", logInName)
+
         startActivity(intent)
         slideLeft()
     }
