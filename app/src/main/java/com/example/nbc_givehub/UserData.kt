@@ -10,6 +10,7 @@ data class UserData(
 ){
     companion object{
         var datalist = arrayListOf(
+            UserData("a", "a", "admin", "ios / swift", "gitgit", "git", "blog"),
             UserData("jgs288@naver.com", "Abcdef!","장규식", "-", "Android / Kotlin","github.com/JnagGyuSik", "aquaria-kr.tistory.com/"),
             UserData("dkswlsgur123@naver.com", "Abcdef@","안진혁", "ENTP", "Android / Kotlin","github.com/AnJinHyuck", "noisno.tistory.com/"),
             UserData("jyk0435@naver.com", "Abcdef#","윤영진","INFP", "Android / Kotlin","github.com/jinnnyyy", "yyj1624.tistory.com/"),
