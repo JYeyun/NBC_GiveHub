@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/main_background">
+    android:background="#F8F9FA">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/give_hub" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:text="@string/name"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/signUpTitle"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/nanumsquareb"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
@@ -34,70 +33,46 @@
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_edit"
         android:ems="10"
+        android:fontFamily="@font/nanumsquareb"
         android:hint="@string/nameHint"
         android:inputType="text"
         android:paddingHorizontal="15dp"
         android:textColor="@color/black"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="TextSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/id"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/singUpName" />
 
     <EditText
         android:id="@+id/singUpId"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_edit"
         android:ems="10"
+        android:fontFamily="@font/nanumsquareb"
         android:hint="@string/idHint"
         android:inputType="textEmailAddress"
         android:paddingHorizontal="15dp"
         android:textColor="@color/black"
-        android:textSize="15dp"
+        android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/pw"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/singUpId" />
+        app:layout_constraintTop_toBottomOf="@+id/singUpName" />
 
     <EditText
         android:id="@+id/singUpPw"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_edit"
         android:ems="10"
@@ -108,37 +83,36 @@
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/singUpId" />
 
     <android.widget.Button
         android:id="@+id/signUpBt"
-        android:layout_width="120dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/buttoncustom"
         android:backgroundTint="@color/main_green"
+        android:fontFamily="@font/nanumsquareb"
         android:text="@string/signUpBt"
         android:textColor="@color/white"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/singUpBack"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <android.widget.Button
+    <TextView
         android:id="@+id/singUpBack"
-        android:layout_width="120dp"
-        android:layout_height="40dp"
-        android:background="@drawable/buttoncustom"
-        android:backgroundTint="@color/main_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F8F9FA"
         android:text="@string/back"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/signUpBt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/signUpBt"
-        app:layout_constraintTop_toTopOf="@+id/signUpBt" />
+        android:textColor="@color/text_button"
+        android:layout_marginLeft="5dp"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_already"
+        app:layout_constraintTop_toTopOf="@+id/tv_already"
+     />
 
     <ImageView
         android:id="@+id/singUpNameCheck"
@@ -154,13 +128,14 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pwPattern"
-        android:textSize="12sp"
         android:layout_marginTop="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/nanumsquareb"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
+        android:text="@string/pwPattern"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/singUpPw" />
 
     <ImageView
@@ -183,9 +158,34 @@
         app:layout_constraintEnd_toEndOf="@+id/singUpPw"
         app:layout_constraintTop_toTopOf="@+id/singUpPw" />
 
+<!--    <View-->
+<!--        android:id="@+id/signUp_line"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@color/main_gray"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:layout_marginTop="220dp"-->
+<!--         />-->
+
+    <TextView
+        android:id="@+id/tv_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미 계정이 있으시다면"
+        android:textSize="11sp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/singUpBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBt"
+        android:layout_marginTop="10dp"
+         />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--
-1.전체적으로 라인 내리고
-2. 유효성 검사 꽉안차게
-3. 회원가입 영어 버전 Create-->
+    <!--
+    1.전체적으로 라인 내리고
+    2. 유효성 검사 꽉안차게
+    3. 회원가입 영어 버전 Create-->
