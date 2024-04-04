@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 #Thu Apr 04 18:18:47 KST 2024
 base.0=C\:\\Users\\admin\\Desktop\\Code\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\admin\\Desktop\\Code\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\admin\\Desktop\\Code\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+=======
+#Thu Apr 04 18:27:20 JST 2024
+base.0=C\:\\Users\\dolla\\OneDrive\\Desktop\\android\\aa\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\dolla\\OneDrive\\Desktop\\android\\aa\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\dolla\\OneDrive\\Desktop\\android\\aa\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+>>>>>>> develop
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=15/classes.dex
