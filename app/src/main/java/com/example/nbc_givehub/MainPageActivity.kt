@@ -106,9 +106,6 @@ class MainPageActivity : AppCompatActivity() {
         itemListView.setOnItemClickListener { adapterView, view, i, l ->
             val clickedItem = dummyPost[i]
 
-            //좋아요 1 추가
-            dummyPost[i].like++
-
             //디테일페이지로 데이터 넘기기
             val intent = Intent(this, DetailPageActivity::class.java)
             intent.putExtra("userName", clickedItem.userName)
