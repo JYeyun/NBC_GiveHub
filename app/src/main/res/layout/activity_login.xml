@@ -52,7 +52,6 @@
         android:layout_height="40dp"
         android:background="@drawable/et_corner"
         android:ems="10"
-        android:fontFamily="@font/nanumsquareb"
         android:hint="@string/pwHint"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
