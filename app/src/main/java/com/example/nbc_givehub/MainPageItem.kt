@@ -6,7 +6,7 @@ data class MainPageItem(
     val postImage: Int,
     val postTitle: String,
     val postSummary: String,
-//    var like : Int,
+    var like: Int,
 ) {
     companion object {
         fun dummyPostData(): ArrayList<MainPageItem> {
@@ -25,7 +25,8 @@ data class MainPageItem(
                             "- RESUMED\n" +
                             "- DESTROYED\n" +
                             "Lifecycle 위에 Fragment를 빌드하면 수명 주기 인식 구성요소로 수명 주기 처리에 사용할 수 있는 기법과 클래스를 사용할 수 있다. LifecycleObserver를 사용하는 것의 대안으로, Fragment 클래스에는 프래그먼트 수명 주기의 각 변경에 대응하는 콜백 메서드가 포함되어 있다.\n" +
-                            "onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy()가 포함되어 있다."
+                            "onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy()가 포함되어 있다.",
+                    78
                 ),
                 MainPageItem(
                     R.drawable.img5,
@@ -42,7 +43,8 @@ data class MainPageItem(
                             "2. sort는 값을 정렬을 할 뿐 값을 출력하지 않음\n" +
                             "바로 위의 코드의 출력 값\n" +
                             "kotlin.Unit은 sort를 한 출력값. 정렬만 할 뿐 값을 출력하지 않음 println(b)를 통해 다시 b의 값을 출력하자 정렬된 리스트 출력\n" +
-                            "3. sorted는 바로 오름차순한 값을 출력"
+                            "3. sorted는 바로 오름차순한 값을 출력",
+                    31
                 ),
                 MainPageItem(
                     R.drawable.img1,
@@ -54,7 +56,8 @@ data class MainPageItem(
                             "onPause()가 호출되면 더이상 앱에 포커스를 맞추고 있지 않게 되고, onStop() 이후에는 앱이 화면에 표시되지 않게된다.\n" +
                             "onRestart(), onStart()로 시작한 후 onResume()으로 앱이 재개된다.\n" +
                             "참고로 onRestart()는 액티비티가 이미 만들어진 상태에서 onStop()이 호출될 때 Created 상태로 전환된다. 이때 Destroyed로 진입하지 않고 Started로 되돌아 가는 경우에만 시스템에서 호출한다. 즉, onRestart()는\n" +
-                            " 액티비티가 처음으로 시작되지 않은 경우에만(앱을 백그라운드에서 포그라운드로 다시 시작하는 경우에만) 호출하려는 코드를 배치하는 위치이다."
+                            " 액티비티가 처음으로 시작되지 않은 경우에만(앱을 백그라운드에서 포그라운드로 다시 시작하는 경우에만) 호출하려는 코드를 배치하는 위치이다.",
+                    24
                 ),
                 MainPageItem(
                     R.drawable.img4,
@@ -75,7 +78,8 @@ data class MainPageItem(
                             "android:layout_marginLeft =\"\" → 바깥쪽 왼쪽 여백android:layout_marginRight =\"\" → 바깥쪽 오른쪽 여백android:layout_marginStart =\"\" → 바깥쪽 시작 방향 여백(왼쪽)\n" +
                             "android:layout_marginEnd =\"\" → 바깥쪽 끝 방향 여백(오른쪽)\n" +
                             "android:layout_marginVertical =\"\" → 바깥쪽 세로 여백\n" +
-                            "android:layout_margin Horizontall =\"\" → 바깥쪽 가로 여백"
+                            "android:layout_margin Horizontall =\"\" → 바깥쪽 가로 여백",
+                    17
                 ),
                 MainPageItem(
                     R.drawable.img2,
@@ -91,7 +95,8 @@ data class MainPageItem(
                             "활동의 인스턴스가 이미 작업에 있다면 시스템은 새 인스턴스를 생성하지 않고 기존 인스턴스로 라우팅 한다.활동의 인스턴스가 한 번에 하나만 존재 할 수 있다. 위의 다른 액티비티를 쌓을 수 있다.\n" +
                             " android:launchMode=\"singleInstance\"\n" +
                             "singletask와 동일하지만 위의 다른 액티비티를 쌓을 수 없다.\n" +
-                            "활동은 항상 자체 작업의 단 하나의 유일한 멤버이다."
+                            "활동은 항상 자체 작업의 단 하나의 유일한 멤버이다.",
+                    77
                 )
             )
             return dummyPostList

@@ -15,17 +15,13 @@ import com.example.nbc_givehub.UserData.Companion.showlist
 
 class MainPageActivity : AppCompatActivity() {
 
-    //더미포스트 변수
-    val itemList = ArrayList<MainPageItem>()
+    //더미포스트 생성
+    var dummyPost = dummyPostData()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_mainpage)
-
-        //더미포스트 생성 및 리스트뷰에 추가
-        val dummyPost = dummyPostData()
-        itemList.addAll(dummyPost)
 
         //상호작용 버튼 선언
         val myPageBtn = findViewById<FrameLayout>(R.id.btn_mypage)
@@ -47,20 +43,24 @@ class MainPageActivity : AppCompatActivity() {
 
     private fun makeListView() {
         //화면에 리스트뷰 그려주기
-        val itemAdapter = MainPageAdapter(this, itemList)
+        val itemAdapter = MainPageAdapter(this, dummyPost)
         val itemListView = findViewById<ListView>(R.id.mainListView)
         itemListView.adapter = itemAdapter
 
         //특정 아이템 클릭 시
         itemListView.setOnItemClickListener{ adapterView, view, i, l ->
-            val clickedItem = itemList[i]
+            val clickedItem = dummyPost[i]
+
+            //좋아요 1 추가
+            dummyPost[i].like++
+
+            //디테일페이지로 데이터 넘기기
             val intent = Intent(this, DetailPageActivity::class.java)
             intent.putExtra("userName", clickedItem.userName)
             intent.putExtra("userImage", clickedItem.userImage)
             intent.putExtra("postImage", clickedItem.postImage)
             intent.putExtra("postTitle", clickedItem.postTitle)
             intent.putExtra("postSummary", clickedItem.postSummary)
-
             startActivity(intent)
             slideLeft()
         }
