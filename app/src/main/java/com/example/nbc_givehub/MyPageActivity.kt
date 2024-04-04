@@ -50,25 +50,17 @@ class MyPageActivity : AppCompatActivity() {
         // 랜덤 이미지 적용
         var ranimg = random.nextInt(3)
         when(ranimg){
-            0 -> {
-                img.setImageResource(R.drawable.img1)
-            }
-            1 -> {
-                img.setImageResource(R.drawable.img2)
-            }
-            2 -> {
-                img.setImageResource(R.drawable.img3)
-            }
-            3 -> {
-                img.setImageResource(R.drawable.img4)
-            }
+            0 -> img.setImageResource(R.drawable.img1)
+            1 -> img.setImageResource(R.drawable.img2)
+            2 -> img.setImageResource(R.drawable.img3)
+            3 -> img.setImageResource(R.drawable.img4)
         }
 
         // 리스트뷰 더미 리스트
         val itemList = ArrayList<MainPageItem>()
         val dummyList = dummyPostData()
         for(i in dummyList.indices){
-            if(dummyList[i].userName == id) itemList.add(dummyList[i])
+            if(dummyList[i].userName == userlist[login_user!!].name) itemList.add(dummyList[i])
         }
 
         //화면에 리스트뷰 그려주기
