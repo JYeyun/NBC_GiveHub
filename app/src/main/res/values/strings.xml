@@ -20,7 +20,7 @@
     <string name="idPwCheck">아이디 혹은 비밀번호가 틀렸습니다.</string>
 
     <!-- signup page -->
-
+    <string name="signUpTitle">계정을 생성해주세요</string>
     <!-- main page -->
     <string name="logoutMessageTitle">로그아웃 하시겠습니까?</string>
     <string name="logoutMessageContents">다음에 또 멋진 기술 공유로 만나요!</string>
