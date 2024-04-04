@@ -88,7 +88,7 @@ class SignUpActivity : AppCompatActivity() {
         sginUpBt.setOnClickListener {
             //정보 누락 시
             if (sginUpName.text.isBlank() || sginUpId.text.isBlank() || sginUpPw.text.isBlank()) {
-                Toast.makeText(this, "입력되지 않은 정보가 있습니다", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
             }
             //모든 정보 입력 시
             else {
@@ -103,7 +103,7 @@ class SignUpActivity : AppCompatActivity() {
                             sginUpName.text.toString()
                         )
 
-                        Toast.makeText(this, "회원가입이 완료되었습니다", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
 
                         //로그인 화면으로 데이터 넘김
                         val intent = Intent(this, LoginActivity::class.java).apply {
@@ -118,12 +118,12 @@ class SignUpActivity : AppCompatActivity() {
                             finish()
                         }
                     } else {
-                        Toast.makeText(this, "입력 정보를 다시 확인해주세요.", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
                     }
                 }
                 //아이디 중복 있을 시
                 else {
-                    Toast.makeText(this, "중복된 아이디 입니다", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
                 }
             }
         }
