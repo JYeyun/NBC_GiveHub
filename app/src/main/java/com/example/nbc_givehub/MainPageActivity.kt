@@ -2,33 +2,58 @@ package com.example.nbc_givehub
 
 import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.Paint
 import android.os.Bundle
-import android.util.Log
 import android.widget.FrameLayout
+import android.widget.LinearLayout
 import android.widget.ListView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.nbc_givehub.MainPageItem.Companion.dummyPostData
-import com.example.nbc_givehub.UserData.Companion.showlist
 
 class MainPageActivity : AppCompatActivity() {
 
     //더미포스트 생성
     var dummyPost = dummyPostData()
 
+    //피드 변경 관련 변수 선언
+    var isHome = false
+    var isPopular = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_mainpage)
+        isHome = true
 
         //상호작용 버튼 선언
+        val mainBtn = findViewById<FrameLayout>(R.id.btn_main)
+        val popularBtn = findViewById<LinearLayout>(R.id.btn_popular)
         val myPageBtn = findViewById<FrameLayout>(R.id.btn_mypage)
         val logoutBtn = findViewById<FrameLayout>(R.id.btn_logout)
 
+        //피드 상태 UI 변경
+        var mainText = findViewById<TextView>(R.id.tv_main)
+        var popularText = findViewById<TextView>(R.id.tv_popular)
+        mainText.paintFlags = Paint.UNDERLINE_TEXT_FLAG
+
+
         //리스트뷰
-        makeListView()
+        makeListView(dummyPost)
+
+        //홈피드 눌렀을 때 데이터 로딩
+        mainBtn.setOnClickListener {
+            changeMain(mainText, popularText)
+        }
+
+        //인기글 눌렀을 때 데이터 로딩
+        popularBtn.setOnClickListener {
+            changePopular(mainText, popularText)
+        }
+
 
         //마이페이지 이동
         myPageBtn.setOnClickListener {
@@ -41,18 +66,45 @@ class MainPageActivity : AppCompatActivity() {
         }
     }
 
-    private fun makeListView() {
+    private fun changeMain(mainText: TextView, popularText: TextView) {
+        if (!isHome) {
+            //홈피드 데이터로 교체
+            makeListView(dummyPost)
+
+            mainText.paintFlags = Paint.UNDERLINE_TEXT_FLAG
+            popularText.paintFlags = mainText.paintFlags and Paint.UNDERLINE_TEXT_FLAG.inv()
+
+            isHome = true
+            isPopular = false
+        }
+    }
+
+    private fun changePopular(mainText: TextView, popularText: TextView) {
+        if (!isPopular) {
+            //좋아요 30 이상 데이터만 표시
+            val popularPost =
+                ArrayList(dummyPost.filter { it.like >= 30 }.sortedByDescending { it.like })
+
+            //인기 피드 데이터로 교체
+            makeListView(popularPost)
+
+            popularText.paintFlags = Paint.UNDERLINE_TEXT_FLAG
+            mainText.paintFlags = mainText.paintFlags and Paint.UNDERLINE_TEXT_FLAG.inv()
+
+            isPopular = true
+            isHome = false
+        }
+    }
+
+    private fun makeListView(dummyPost: ArrayList<MainPageItem>) {
         //화면에 리스트뷰 그려주기
         val itemAdapter = MainPageAdapter(this, dummyPost)
         val itemListView = findViewById<ListView>(R.id.mainListView)
         itemListView.adapter = itemAdapter
 
         //특정 아이템 클릭 시
-        itemListView.setOnItemClickListener{ adapterView, view, i, l ->
+        itemListView.setOnItemClickListener { adapterView, view, i, l ->
             val clickedItem = dummyPost[i]
-
-            //좋아요 1 추가
-            dummyPost[i].like++
 
             //디테일페이지로 데이터 넘기기
             val intent = Intent(this, DetailPageActivity::class.java)
