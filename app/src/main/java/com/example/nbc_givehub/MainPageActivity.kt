@@ -15,13 +15,12 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.nbc_givehub.MainPageItem.Companion.dummyPostData
 
 class MainPageActivity : AppCompatActivity() {
-
     //더미포스트 생성
     var dummyPost = dummyPostData()
 
     //피드 변경 관련 변수 선언
-    var isHome = false
-    var isPopular = false
+    private var isHome = false
+    private var isPopular = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +38,6 @@ class MainPageActivity : AppCompatActivity() {
         var mainText = findViewById<TextView>(R.id.tv_main)
         var popularText = findViewById<TextView>(R.id.tv_popular)
         mainText.paintFlags = Paint.UNDERLINE_TEXT_FLAG
-
 
         //리스트뷰
         makeListView(dummyPost)
@@ -108,11 +106,13 @@ class MainPageActivity : AppCompatActivity() {
 
             //디테일페이지로 데이터 넘기기
             val intent = Intent(this, DetailPageActivity::class.java)
+            intent.putExtra("index", i)
             intent.putExtra("userName", clickedItem.userName)
             intent.putExtra("userImage", clickedItem.userImage)
             intent.putExtra("postImage", clickedItem.postImage)
             intent.putExtra("postTitle", clickedItem.postTitle)
             intent.putExtra("postSummary", clickedItem.postSummary)
+            intent.putExtra("postLike", clickedItem.isLike)
             startActivity(intent)
             slideLeft()
         }
