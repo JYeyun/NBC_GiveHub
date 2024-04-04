@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.nbc_givehub.MainPageItem.Companion.dummyPostData
+import de.hdodenhof.circleimageview.CircleImageView
 
 class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -20,6 +21,10 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
     private var backBtn : ImageButton? = null
     private var viewBtn : TextView? = null
     private var likeBtn : ImageView? = null
+
+    //프로필 선택 시 유저 페이지
+    private var userImg : CircleImageView? = null
+    private var userName : TextView? = null
 
     //좋아요 여부 확인
     private var isLike : Boolean? = null
@@ -33,6 +38,9 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
         //포스트 데이터 띄우기
         setContents()
 
+        userImg = findViewById(R.id.img_detail_profile)
+        userName = findViewById(R.id.tv_detail_user)
+
         //상호작용 버튼에 뷰 요소 넣기
         backBtn = findViewById(R.id.btn_detail_back)!!
         viewBtn = findViewById(R.id.tv_more_less)!!
@@ -45,10 +53,14 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
         backBtn!!.setOnClickListener(this)
         viewBtn!!.setOnClickListener(this)
         likeBtn!!.setOnClickListener(this)
+        userImg!!.setOnClickListener(this)
     }
 
     //뷰에서 클릭 발생 시 처리
     override fun onClick(v: View?) {
+        val uName = intent.getStringExtra("userName")
+        val uImage = intent.getIntExtra("userImage", 0)
+
         //뒤로가기 버튼
         if (v?.id == R.id.btn_detail_back) {
             val intent = Intent(this, MainPageActivity::class.java)
@@ -97,6 +109,14 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
                 isLike = true
                 thisPost.isLike = true
             }
+        }
+
+        if(v?.id == R.id.img_detail_profile){
+            var intent = Intent(this, UserPageActivity::class.java)
+            Log.d("uname", "$uName")
+            intent.putExtra("name", uName)
+            intent.putExtra("img", uImage)
+            startActivity(intent)
         }
     }
 
