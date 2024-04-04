@@ -54,7 +54,8 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/user_name"
             app:layout_constraintStart_toEndOf="@+id/user_name"
-            app:layout_constraintTop_toTopOf="@+id/user_name" />
+            app:layout_constraintTop_toTopOf="@+id/user_name"
+            android:visibility="invisible"/>
 
         <TextView
             android:id="@+id/textView9"
@@ -66,7 +67,8 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView4"
             app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toTopOf="@+id/textView4" />
+            app:layout_constraintTop_toTopOf="@+id/textView4"
+            android:visibility="invisible"/>
 
         <TextView
             android:id="@+id/post_name"
@@ -100,7 +102,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:text="#안드로이드 개발 #프래그먼트"
+            android:text="#안드로이드 개발"
             android:textColor="@color/text_button"
             android:textSize="12sp"
             android:textStyle="bold"
@@ -115,11 +117,11 @@
             android:text="💚"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="@+id/textView7"
-            app:layout_constraintEnd_toStartOf="@+id/textView11"
+            app:layout_constraintEnd_toStartOf="@+id/like"
             app:layout_constraintTop_toTopOf="@+id/textView7" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/like"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"

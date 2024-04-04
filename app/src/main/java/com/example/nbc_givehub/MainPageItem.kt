@@ -26,11 +26,11 @@ data class MainPageItem(
                             "- DESTROYED\n" +
                             "Lifecycle 위에 Fragment를 빌드하면 수명 주기 인식 구성요소로 수명 주기 처리에 사용할 수 있는 기법과 클래스를 사용할 수 있다. LifecycleObserver를 사용하는 것의 대안으로, Fragment 클래스에는 프래그먼트 수명 주기의 각 변경에 대응하는 콜백 메서드가 포함되어 있다.\n" +
                             "onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy()가 포함되어 있다.",
-                    78
+                    18
                 ),
                 MainPageItem(
                     R.drawable.img5,
-                    "정지윤",
+                    "정지연",
                     R.drawable.img_post2,
                     "배열과 컬렉션 편",
                     "코틀린에서 배열을 다루기 위한 다양한 유형들이 있다.\n" +
@@ -44,7 +44,7 @@ data class MainPageItem(
                             "바로 위의 코드의 출력 값\n" +
                             "kotlin.Unit은 sort를 한 출력값. 정렬만 할 뿐 값을 출력하지 않음 println(b)를 통해 다시 b의 값을 출력하자 정렬된 리스트 출력\n" +
                             "3. sorted는 바로 오름차순한 값을 출력",
-                    31
+                    77
                 ),
                 MainPageItem(
                     R.drawable.img1,
@@ -79,7 +79,7 @@ data class MainPageItem(
                             "android:layout_marginEnd =\"\" → 바깥쪽 끝 방향 여백(오른쪽)\n" +
                             "android:layout_marginVertical =\"\" → 바깥쪽 세로 여백\n" +
                             "android:layout_margin Horizontall =\"\" → 바깥쪽 가로 여백",
-                    17
+                    30
                 ),
                 MainPageItem(
                     R.drawable.img2,
@@ -96,7 +96,7 @@ data class MainPageItem(
                             " android:launchMode=\"singleInstance\"\n" +
                             "singletask와 동일하지만 위의 다른 액티비티를 쌓을 수 없다.\n" +
                             "활동은 항상 자체 작업의 단 하나의 유일한 멤버이다.",
-                    77
+                    101
                 ),
                 MainPageItem(
                     R.drawable.img4,
@@ -106,7 +106,7 @@ data class MainPageItem(
                     "KotIin은 클래스에서 상속하거나 Decorator 와 같은 디자인 패턴으 사용하지 않고도 새로운 기능으 로 클래스나 인터페이스를 확장할 수 있는 기능을 제공합니다 . 이는 확장 이라는 특수 선언을 통해 수행됩니다 예를 들어 수정할 수 없는 타사 라이브러리의 클래스 또는 인터페이스에 대한 새 함수를 작성할 수 있습니다. 이러한 함수는 마지 원래 클래스의 메서드인 것져럼 일반적인 방법으로 호출할 수 있니다. 이 메커니즘을 확장 기능 이라고 합니다 . 기존 클래스에 대한 새 속성을 정의할 수 있는 확장 속성도 있습니다\n" +
                             "확장 기능을 선언하려면 확장 중인 유형을 나타내는 수신기 유형으로 이름 앞에 접두사를 붙입니다.\n" +
                             "확장자는 실제로 확장하는 클래스를 수정하지 않습니다. 확장자를 정의하면 클래스에 새 멤버를 삽입하는 것이 아니라 이 유형의 변수에 점 표기를 사용하여 새 함수를 호출할 수 있도록 하는 것입니다.",
-                0
+                    31
                 ),
                 MainPageItem(
                     R.drawable.img1,
@@ -126,7 +126,7 @@ data class MainPageItem(
                             "인터페이스\n" +
                             "메소드의 로직이 존재하지않고 이름만 존재할때 추상메소드 라고함.\n" +
                             "원래 인터페이스는 추상메소드만 허용하지만 최근에는 추상메소드가 아니어도 됨.",
-                0
+                    5
                 ),
                 MainPageItem(
                     R.drawable.img5,
@@ -156,7 +156,7 @@ data class MainPageItem(
                             " val result = nickname?: \"null\"(null이면 오른쪽 출력)\n" +
                             " val result = nickname?. length(null이 아니면 값 출력)\n" +
                             " val result = nickname!!.length(null 일 수 없는 경우)",
-                0
+                    14
                 ),
                 MainPageItem(
                     R.drawable.img4,
@@ -166,7 +166,7 @@ data class MainPageItem(
                     "KotIin은 클래스에서 상속하거나 Decorator 와 같은 디자인 패턴으 사용하지 않고도 새로운 기능으 로 클래스나 인터페이스를 확장할 수 있는 기능을 제공합니다 . 이는 확장 이라는 특수 선언을 통해 수행됩니다 예를 들어 수정할 수 없는 타사 라이브러리의 클래스 또는 인터페이스에 대한 새 함수를 작성할 수 있습니다. 이러한 함수는 마지 원래 클래스의 메서드인 것져럼 일반적인 방법으로 호출할 수 있니다. 이 메커니즘을 확장 기능 이라고 합니다 . 기존 클래스에 대한 새 속성을 정의할 수 있는 확장 속성도 있습니다\n" +
                             "확장 기능을 선언하려면 확장 중인 유형을 나타내는 수신기 유형으로 이름 앞에 접두사를 붙입니다.\n" +
                             "확장자는 실제로 확장하는 클래스를 수정하지 않습니다. 확장자를 정의하면 클래스에 새 멤버를 삽입하는 것이 아니라 이 유형의 변수에 점 표기를 사용하여 새 함수를 호출할 수 있도록 하는 것입니다.",
-                0
+                    7
                 ),
                 MainPageItem(
                     R.drawable.img1,
@@ -186,7 +186,7 @@ data class MainPageItem(
                             "인터페이스\n" +
                             "메소드의 로직이 존재하지않고 이름만 존재할때 추상메소드 라고함.\n" +
                             "원래 인터페이스는 추상메소드만 허용하지만 최근에는 추상메소드가 아니어도 됨.",
-                0
+                    85
                 ),
                 MainPageItem(
                     R.drawable.img5,
@@ -216,7 +216,8 @@ data class MainPageItem(
                             " val result = nickname?: \"null\"(null이면 오른쪽 출력)\n" +
                             " val result = nickname?. length(null이 아니면 값 출력)\n" +
                             " val result = nickname!!.length(null 일 수 없는 경우)",
-                0)
+                    29
+                )
 
 
             )

@@ -25,6 +25,8 @@
     <string name="logoutMessageTitle">로그아웃 하시겠습니까?</string>
     <string name="logoutMessageContents">다음에 또 멋진 기술 공유로 만나요!</string>
     <string name="logoutComplete">로그아웃 되었습니다.</string>
+    <string name="popular">인기글 모아보기</string>
+    <string name="home">홈 피드</string>
     <string name="logoutDo">로그아웃</string>
 
     <!-- my page -->
