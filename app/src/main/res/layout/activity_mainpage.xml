@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/main_background"
+    android:background="@color/main_new_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -18,9 +18,9 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="65sp"
+            android:layout_height="100sp"
             android:paddingTop="20dp"
-            android:background="@color/main_green"
+            android:background="@color/main_new_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -30,10 +30,9 @@
                 android:layout_width="80sp"
                 android:layout_height="30sp"
                 android:layout_marginStart="16dp"
-                android:background="@drawable/mainpage_fl_btn_rec"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="@+id/circleImageView">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -49,10 +48,9 @@
                 android:layout_width="80sp"
                 android:layout_height="30sp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/mainpage_fl_btn_rec"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="@+id/circleImageView">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -64,14 +62,15 @@
             </FrameLayout>
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:id="@+id/circleImageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="8dp"
                 android:padding="5dp"
                 android:src="@drawable/give_hub"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ListView
@@ -79,8 +78,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:dividerHeight="0px"
-            android:divider="@color/main_background"
-            android:listSelector="@color/main_background"
+            android:divider="@color/main_new_background"
+            android:listSelector="@color/main_new_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
