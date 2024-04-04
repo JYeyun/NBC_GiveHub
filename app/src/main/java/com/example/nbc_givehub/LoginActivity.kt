@@ -69,7 +69,6 @@ class LoginActivity : AppCompatActivity() {
             sendToMain(user.id)
         } else if (inputId == id && inputPw == pw) {
             intent.putExtra("id", id)
-            intent.putExtra("pw", pw)
             sendToMain(id)
         } else
             Toast.makeText(this, R.string.idPwCheck, Toast.LENGTH_SHORT).show()
