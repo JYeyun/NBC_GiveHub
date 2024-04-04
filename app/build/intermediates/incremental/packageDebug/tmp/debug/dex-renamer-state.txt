@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-#Wed Apr 03 19:32:12 KST 2024
+#Wed Apr 03 20:29:07 KST 2024
 base.0=C\:\\Users\\ajh98\\Documents\\GitHub\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\ajh98\\Documents\\GitHub\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\ajh98\\Documents\\GitHub\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-=======
-#Wed Apr 03 19:33:09 KST 2024
-base.0=/Users/neo/NBC_team/NBC_GiveHub/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/neo/NBC_team/NBC_GiveHub/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/neo/NBC_team/NBC_GiveHub/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
->>>>>>> f028ef2f961ce50f10f8b04a8e6122e2971260db
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=15/classes.dex
