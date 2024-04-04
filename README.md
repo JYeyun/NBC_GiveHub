@@ -39,8 +39,11 @@
 
 ### 로그인 
 registerForActivityResult을 사용하여 회원가입할 때 입력한 아이디가 그대로 로그인 창에 띄워질 수 있게 함.
+
 intent.putExtra를 이용하여 id와 비밀번호를 받아넘겨줌
+
 비밀번호에 마스킹 처리를 하였음
+
 아이디나 비밀번호 중 하나 이상이 일치하지 않으면 Toast로 "아이디 혹은 비밀번호가 틀렸습니다."라는 메시지를 출력
 
 ### 회원가입
@@ -51,7 +54,9 @@ intent.getStringExtra을 이용해 id를 받아와 출력
 
 ### 디테일 페이지
 ConstrainLayout을 활용하였음.
+
 intent.getStringExtra 및 intent.getIntExtra를 활용하여 userName, userImage, postImage, postTitle, postSummary를 넘겨 받음.
+
 findViewById() 함수를 사용하여 화면에 데이터를 출력함.
 
 
@@ -60,9 +65,12 @@ listview를 이용해 위 아래로 스크롤 할 수 있게하고, Adapter를 �
 
 
 ### 그 외
-Activity 전환시 overridePendingTransition() 메서드를 사용하여 animation이 구현될 수 있도록 함. 
+Activity 전환시 overridePendingTransition() 메서드를 사용하여 animation이 구현될 수 있도록 함.
+
 res/values/strings 디렉토리에서 string.xml-en을 만들어 en버전이 지원되도록 함.
+
 동그란 ImageView를 만들어 사용함.
+
 res/values/themes 디렉토리에서 night을 추가해 다크모드 구현함.
 
 
