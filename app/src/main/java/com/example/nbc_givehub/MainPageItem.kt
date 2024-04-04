@@ -13,7 +13,7 @@ data class MainPageItem(
             val dummyPostList = arrayListOf(
                 MainPageItem(
                     R.drawable.img1,
-                    "jyk0435",
+                    "윤영진",
                     R.drawable.img_post1,
                     "Fragment LifeCycle",
                     "각 Fragment 인스턴스에는 고유한 수명 주기가 있다. 사용자가 앱을 탐색하거나 앱의 상호작용할 때 프래그먼트는 화면에서 추가 또는 삭제되거나 화면에 들어가고 나오면서 수명 주기의 여러 상태 간에 전환하게 된다.\n" +
@@ -26,11 +26,11 @@ data class MainPageItem(
                             "- DESTROYED\n" +
                             "Lifecycle 위에 Fragment를 빌드하면 수명 주기 인식 구성요소로 수명 주기 처리에 사용할 수 있는 기법과 클래스를 사용할 수 있다. LifecycleObserver를 사용하는 것의 대안으로, Fragment 클래스에는 프래그먼트 수명 주기의 각 변경에 대응하는 콜백 메서드가 포함되어 있다.\n" +
                             "onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy()가 포함되어 있다.",
-                    78
+                    18
                 ),
                 MainPageItem(
                     R.drawable.img5,
-                    "neoneoneo123",
+                    "정지연",
                     R.drawable.img_post2,
                     "배열과 컬렉션 편",
                     "코틀린에서 배열을 다루기 위한 다양한 유형들이 있다.\n" +
@@ -44,11 +44,11 @@ data class MainPageItem(
                             "바로 위의 코드의 출력 값\n" +
                             "kotlin.Unit은 sort를 한 출력값. 정렬만 할 뿐 값을 출력하지 않음 println(b)를 통해 다시 b의 값을 출력하자 정렬된 리스트 출력\n" +
                             "3. sorted는 바로 오름차순한 값을 출력",
-                    31
+                    17
                 ),
                 MainPageItem(
                     R.drawable.img1,
-                    "jgs288",
+                    "장규식",
                     R.drawable.img_post3,
                     "Activity LifeCycle을 알아보자",
                     "onCreate() 메서드에서는 액티비티의 일회성 초기화를 실행해야 하는데, onCreate() 메서드는 액티비티가 초기화된 직후(OS에서 메모리에 새로운 액티비티 객체를 만들 때) 한 번 호출이 된다.onCreate()가 실행되면 활동이 생성되었다고 간주된다.또한, onCreate() 메서드를 재정의할 때, 상위클래스 구현을 호출하여 활동 생성을 완료해야하는데, 이를 위해 액티비티 안에서 super.onCreate()를 즉시 호출해야한다. 이 사항은 다른 수명 주기 콜백 메서드의 경우에도 마찬가지로 적용이 필요하다.\n" +
@@ -61,7 +61,7 @@ data class MainPageItem(
                 ),
                 MainPageItem(
                     R.drawable.img4,
-                    "dkswlsgur123",
+                    "안진혁",
                     R.drawable.img_post4,
                     "안드로이드 스튜디오 padding, margin 뽀개기",
                     "android:padding=\"\" → 안쪽 전체 여백\n" +
@@ -79,11 +79,11 @@ data class MainPageItem(
                             "android:layout_marginEnd =\"\" → 바깥쪽 끝 방향 여백(오른쪽)\n" +
                             "android:layout_marginVertical =\"\" → 바깥쪽 세로 여백\n" +
                             "android:layout_margin Horizontall =\"\" → 바깥쪽 가로 여백",
-                    17
+                    30
                 ),
                 MainPageItem(
                     R.drawable.img2,
-                    "jyy3637",
+                    "정예윤",
                     R.drawable.img_post5,
                     "Activity Stack이 뭘까?",
                     "Activity Stack 관리 : AndroidManifest의 LaunchMode의 옵션으로 관리\n" +

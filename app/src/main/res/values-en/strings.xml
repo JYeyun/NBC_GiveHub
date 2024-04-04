@@ -12,6 +12,7 @@
     <string name="logoutMessageTitle">Do you want logout?</string>
     <string name="logoutMessageContents">See you next time!</string>
     <string name="logoutComplete">Logout complete</string>
+    <string name="popular">Popular feed</string>
     <string name="logoutDo">Logout</string>
     <string name="signInBt">Sign in</string>
     <string name="signUpBt">Create</string>
@@ -20,4 +21,5 @@
     <string name="idPwCheck">We do not recognize the ID or Password</string>
     <string name="viewMore">View more ▼</string>
     <string name="viewLess">View less ▲</string>
+    <string name="home">Home feed</string>
 </resources>

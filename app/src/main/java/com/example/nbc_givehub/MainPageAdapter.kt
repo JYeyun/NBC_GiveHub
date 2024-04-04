@@ -27,7 +27,7 @@ class MainPageAdapter(val context: Context, val itemList: ArrayList<MainPageItem
         val postImage = view.findViewById<ImageView>(R.id.post_image)
         val postName = view.findViewById<TextView>(R.id.post_name)
         val postContents = view.findViewById<TextView>(R.id.post_contents)
-
+        val postLike = view.findViewById<TextView>(R.id.like)
 
         val item = itemList[position]
         userImage.setImageResource(item.userImage)
@@ -35,6 +35,7 @@ class MainPageAdapter(val context: Context, val itemList: ArrayList<MainPageItem
         postImage.setImageResource(item.postImage)
         postName.text = item.postTitle
         postContents.text = item.postSummary
+        postLike.text = item.like.toString()
 
         return view
     }
