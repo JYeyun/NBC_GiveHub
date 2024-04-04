@@ -2,12 +2,21 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-<<<<<<< HEAD
       <entry key="NBC_Givehub">
-=======
-      <entry key="App">
->>>>>>> f028ef2f961ce50f10f8b04a8e6122e2971260db
-        <State />
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\ajh98\.android\avd\Pixel_4_API_33.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-04T02:29:11.123294800Z" />
+        </State>
       </entry>
     </value>
   </component>
