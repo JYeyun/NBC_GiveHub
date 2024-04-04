@@ -8,6 +8,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.nbc_givehub.MainPageItem.Companion.dummyPostData
 import com.example.nbc_givehub.UserData.Companion.showlist
@@ -18,6 +19,7 @@ class MyPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mypage)
+        enableEdgeToEdge()
 
         val id = intent.getStringExtra("id")?: "Unknown"
 
@@ -47,23 +49,18 @@ class MyPageActivity : AppCompatActivity() {
 
         // 랜덤 이미지 적용
         var ranimg = random.nextInt(3)
-        var imgnum = ""
         when(ranimg){
             0 -> {
                 img.setImageResource(R.drawable.img1)
-                imgnum = "img1"
             }
             1 -> {
                 img.setImageResource(R.drawable.img2)
-                imgnum = "img2"
             }
             2 -> {
                 img.setImageResource(R.drawable.img3)
-                imgnum = "img3"
             }
             3 -> {
                 img.setImageResource(R.drawable.img4)
-                imgnum = "img4"
             }
         }
 
@@ -83,8 +80,14 @@ class MyPageActivity : AppCompatActivity() {
         itemListView.setOnItemClickListener{ adapterView, view, i, l ->
             val clickedItem = itemList[i]
             val intent = Intent(this, DetailPageActivity::class.java)
-            intent.putExtra("data", clickedItem.toString())
+            intent.putExtra("userName", clickedItem.userName)
+            intent.putExtra("userImage", clickedItem.userImage)
+            intent.putExtra("postImage", clickedItem.postImage)
+            intent.putExtra("postTitle", clickedItem.postTitle)
+            intent.putExtra("postSummary", clickedItem.postSummary)
+
             startActivity(intent)
+            slideLeft()
         }
 
         edit_btn.setOnClickListener {
