@@ -100,32 +100,44 @@
 
     <android.widget.Button
         android:id="@+id/signUpBt"
-        android:layout_width="100dp"
+        android:layout_width="230dp"
         android:layout_height="30dp"
         android:background="@drawable/buttoncustom"
         android:backgroundTint="@color/main_green"
         android:text="@string/signUpBt"
         android:textColor="@color/white"
         android:textSize="13sp"
+        android:layout_marginTop="20dp"
         app:layout_constraintHorizontal_bias="0.5"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/singUpPw"
         app:layout_constraintTop_toBottomOf="@id/singUpPw"
         app:layout_constraintStart_toStartOf="@+id/singUpPw"/>
 
-    <android.widget.Button
+    <TextView
         android:id="@+id/singUpBack"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:background="@drawable/buttoncustom"
-        android:backgroundTint="@color/main_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F8F9FA"
         android:text="@string/back"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        android:layout_marginRight="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/signUpBt"
-        app:layout_constraintEnd_toEndOf="@+id/singUpPw"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintTop_toTopOf="@+id/signUpBt" />
+        android:textColor="@color/text_button"
+        android:layout_marginLeft="5dp"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_already"
+        app:layout_constraintTop_toTopOf="@+id/tv_already"
+        />
+
+    <TextView
+        android:id="@+id/tv_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="이미 계정이 있으시다면"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/singUpBack"
+
+        app:layout_constraintEnd_toEndOf="@+id/signUpBt"
+        app:layout_constraintStart_toStartOf="@+id/signUpBt"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

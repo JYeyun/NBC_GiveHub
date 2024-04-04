@@ -9,6 +9,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -33,7 +34,7 @@ class SignUpActivity : AppCompatActivity() {
         val sginUpPwCheck = findViewById<ImageView>(R.id.singUpPwCheck)
 
         val sginUpBt = findViewById<Button>(R.id.signUpBt)
-        val sginUpBackBt = findViewById<Button>(R.id.singUpBack)
+        val sginUpBackBt = findViewById<TextView>(R.id.singUpBack)
 
 
         //이름 확인
