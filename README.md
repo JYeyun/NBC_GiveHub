@@ -38,17 +38,34 @@
 ## 주요 기능
 
 ### 로그인 
-id와 비밀번호가 기존 저장되어 있던 정보와 일치하는지 확인
+registerForActivityResult을 사용하여 회원가입할 때 입력한 아이디가 그대로 로그인 창에 띄워질 수 있게 함.
+intent.putExtra를 이용하여 id와 비밀번호를 받아넘겨줌
+비밀번호에 마스킹 처리를 하였음
+아이디나 비밀번호 중 하나 이상이 일치하지 않으면 Toast로 "아이디 혹은 비밀번호가 틀렸습니다."라는 메시지를 출력
 
 ### 회원가입
 아이디와 이름, 비밀번호를 입력 후 아이디가 이메일 형식에 맞는지, 비밀번호가 8자이상, 20자 이상인지 검사 후 회원가입 진행
 
 ### 마이페이지
-마이페이지에서 로그인에서 입력한 아이디와 이메일, 깃헙 주소와 블로그 주소 등이 발생하도록 하고, edit을 이용해 편집도 가능하도록 함.
+intent.getStringExtra을 이용해 id를 받아와 출력
 
 ### 디테일 페이지
-제목과 이미지, 글이 발생하도록 하고, 긴 글은 일정부분만 보이도록 했다가 더보기를 이용해 전체 화면 보이도록 함. 
+ConstrainLayout을 활용하였음.
+intent.getStringExtra 및 intent.getIntExtra를 활용하여 userName, userImage, postImage, postTitle, postSummary를 넘겨 받음.
+findViewById() 함수를 사용하여 화면에 데이터를 출력함.
+
 
 ### 메인 페이지
-여러 글들이 미리보기로 보일 수 있도록 하고, 스크롤을 이용해 위, 아래로 글을 훑어볼 수 있게 함.
+listview를 이용해 위 아래로 스크롤 할 수 있게하고, Adapter를 사용하여 AdapterView에 데이터를 표시
+
+
+### 그 외
+Activity 전환시 overridePendingTransition() 메서드를 사용하여 animation이 구현될 수 있도록 함. 
+res/values/strings 디렉토리에서 string.xml-en을 만들어 en버전이 지원되도록 함.
+동그란 ImageView를 만들어 사용함.
+res/values/themes 디렉토리에서 night을 추가해 다크모드 구현함.
+
+
+
+
 
