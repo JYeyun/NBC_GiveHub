@@ -2,7 +2,11 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
-      <entry key="app">
+<<<<<<< HEAD
+      <entry key="NBC_Givehub">
+=======
+      <entry key="App">
+>>>>>>> f028ef2f961ce50f10f8b04a8e6122e2971260db
         <State />
       </entry>
     </value>
