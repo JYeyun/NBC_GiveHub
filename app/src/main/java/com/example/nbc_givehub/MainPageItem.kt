@@ -6,6 +6,7 @@ data class MainPageItem(
     val postImage: Int,
     val postTitle: String,
     val postSummary: String,
+//    var like : Int,
 ) {
     companion object {
         fun dummyPostData(): ArrayList<MainPageItem> {
