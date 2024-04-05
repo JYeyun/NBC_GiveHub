@@ -21,7 +21,15 @@
 
     <!-- signup page -->
     <string name="signUpTitle">계정을 생성해주세요</string>
+    <string name="signUpPwCheck">비밀번호를 재입력 해주세요.</string>
+    <string name="signUpPwCheckText">비밀번호 재입력</string>
+    <string name="already">이미 계정이 있으시다면</string>
+    <string name="signupComplete">회원가입 완료</string>
+
+
+=======
     <string name="singUpBack">로그인</string>
+>>>>>>> 43961b6e4829869cb6feae86e4f99d949a4e91ce
     <!-- main page -->
     <string name="logoutMessageTitle">로그아웃 하시겠습니까?</string>
     <string name="logoutMessageContents">다음에 또 멋진 기술 공유로 만나요!</string>
