@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100sp"
-        android:layout_height="100sp"
-        android:layout_marginTop="150dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -33,7 +33,7 @@
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_edit"
         android:ems="10"
@@ -44,7 +44,7 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
         tools:ignore="TextSizeCheck" />
 
     <EditText
@@ -52,7 +52,7 @@
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_edit"
         android:ems="10"
@@ -70,7 +70,7 @@
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_edit"
         android:ems="10"
@@ -87,9 +87,8 @@
         android:id="@+id/signUpBt"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/buttoncustom"
-        android:backgroundTint="@color/main_green"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/buttoncustom2"
         android:fontFamily="@font/nanumsquareb"
         android:text="@string/signUpBt"
         android:textColor="@color/white"
@@ -97,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/singUpPwDobleCheck" />
 
     <TextView
         android:id="@+id/singUpBack"
@@ -110,7 +109,7 @@
         android:textSize="11sp"
         app:layout_constraintStart_toEndOf="@+id/tv_already"
         app:layout_constraintTop_toTopOf="@+id/tv_already"
-     />
+        />
 
     <ImageView
         android:id="@+id/singUpNameCheck"
@@ -156,21 +155,21 @@
         app:layout_constraintEnd_toEndOf="@+id/singUpPw"
         app:layout_constraintTop_toTopOf="@+id/singUpPw" />
 
-<!--    <View-->
-<!--        android:id="@+id/signUp_line"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="2dp"-->
-<!--        android:background="@color/main_gray"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        android:layout_marginBottom="40dp"-->
-<!--        android:layout_marginTop="220dp"-->
-<!--         />-->
+    <!--    <View-->
+    <!--        android:id="@+id/signUp_line"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:background="@color/main_gray"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        android:layout_marginBottom="40dp"-->
+    <!--        android:layout_marginTop="220dp"-->
+    <!--         />-->
 
     <TextView
         android:id="@+id/tv_already"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="이미 계정이 있으시다면"
+        android:text="@string/already"
         android:textSize="11sp"
         android:layout_marginRight="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/singUpBack"
@@ -178,7 +177,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signUpBt"
         android:layout_marginTop="10dp"
-         />
+        />
+
+    <EditText
+        android:id="@+id/singUpPwDobleCheck"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="@string/signUpPwCheck"
+        android:background="@drawable/text_edit"
+        android:inputType="textPassword"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ImageView
+        android:id="@+id/singUpPwDobleCheck2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/singUpPwDobleCheck"
+        app:layout_constraintEnd_toEndOf="@+id/singUpPwDobleCheck"
+        app:layout_constraintTop_toTopOf="@+id/singUpPwDobleCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
