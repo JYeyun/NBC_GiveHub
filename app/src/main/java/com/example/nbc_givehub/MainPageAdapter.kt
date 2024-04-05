@@ -1,6 +1,7 @@
 package com.example.nbc_givehub
 
 import android.content.Context
+import android.text.Html
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,11 +32,11 @@ class MainPageAdapter(val context: Context, val itemList: ArrayList<MainPageItem
 
         val item = itemList[position]
         userImage.setImageResource(item.userImage)
-        //userImage.bringToFront()
         userName.text = item.userName
         postImage.setImageResource(item.postImage)
         postName.text = item.postTitle
-        postContents.text = item.postSummary
+        var deleteHtmlString = Html.fromHtml(item.postSummary).toString()
+        postContents.text = deleteHtmlString
         postLike.text = item.like.toString()
 
         return view
