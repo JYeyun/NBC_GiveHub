@@ -33,7 +33,7 @@
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_edit"
         android:ems="10"
@@ -44,7 +44,7 @@
         android:textSize="15sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
         tools:ignore="TextSizeCheck" />
 
     <EditText
@@ -52,7 +52,7 @@
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_edit"
         android:ems="10"
@@ -70,7 +70,7 @@
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/text_edit"
         android:ems="10"
@@ -87,9 +87,8 @@
         android:id="@+id/signUpBt"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:background="@drawable/buttoncustom"
-        android:backgroundTint="@color/main_green"
         android:layout_marginTop="70dp"
+        android:background="@drawable/buttoncustom2"
         android:fontFamily="@font/nanumsquareb"
         android:text="@string/signUpBt"
         android:textColor="@color/white"
@@ -97,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/singUpPwDobleCheck" />
 
     <TextView
         android:id="@+id/singUpBack"
