@@ -42,10 +42,10 @@ class MyPageActivity : AppCompatActivity() {
         val userlist = showlist()
         val login_user = userlist.indices.find{userlist[it].id == id}
         mp_name.setText(userlist[login_user!!].name)
-        mp_language.setText(userlist[login_user!!].launguage)
-        mp_mbti.setText(userlist[login_user!!].mbti)
-        mp_git.setText(userlist[login_user!!].git)
-        mp_blog.setText(userlist[login_user!!].blog)
+        mp_language.setText(userlist[login_user].launguage)
+        mp_mbti.setText(userlist[login_user].mbti)
+        mp_git.setText(userlist[login_user].git)
+        mp_blog.setText(userlist[login_user].blog)
 
         // 랜덤 이미지 적용
         var ranimg = random.nextInt(3)

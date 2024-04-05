@@ -64,13 +64,13 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
 
     //뷰에서 클릭 발생 시 처리
     override fun onClick(v: View?) {
-        val uName = intent.getStringExtra("userName")
-        val uImage = intent.getIntExtra("userImage", 0)
+        val uName = thisPost.userName
+        val uImage = thisPost.userImage
 
         //뒤로가기 버튼
         if (v?.id == R.id.btn_detail_back) {
             val intent = Intent(this, MainPageActivity::class.java)
-            startActivity(intent)
+            //startActivity(intent)
             finish()
         }
 
