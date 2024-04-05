@@ -22,7 +22,7 @@ class UserPageActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         val name = intent.getStringExtra("name")?: "Unknown"
-        val userImg = intent.getIntExtra("img", 0)?: "Unknown"
+        val userImg = intent.getIntExtra("img", 0)
 
         var img = findViewById<ImageView>(R.id.mypage_profile_img)
         var user_name = findViewById<TextView>(R.id.mypage_name)
@@ -41,6 +41,8 @@ class UserPageActivity : AppCompatActivity() {
         //더미 데이터 적용 코드
         val userlist = showlist()
         val select_user = userlist.indices.find{userlist[it].name == name}
+
+
         user_name.setText(userlist[select_user!!].name)
         user_language.setText(userlist[select_user!!].launguage)
         user_mbti.setText(userlist[select_user!!].mbti)
@@ -57,16 +59,15 @@ class UserPageActivity : AppCompatActivity() {
         val itemAdapter = MainPageAdapter(this, itemList)
         val itemListView = findViewById<ListView>(R.id.mypage_listview)
         itemListView.adapter = itemAdapter
+        itemAdapter.notifyDataSetChanged()
 
         //특정 아이템 클릭 시
         itemListView.setOnItemClickListener{ adapterView, view, i, l ->
             val clickedItem = itemList[i]
             val intent = Intent(this, DetailPageActivity::class.java)
-            intent.putExtra("userName", clickedItem.userName)
-            intent.putExtra("userImage", clickedItem.userImage)
-            intent.putExtra("postImage", clickedItem.postImage)
-            intent.putExtra("postTitle", clickedItem.postTitle)
-            intent.putExtra("postSummary", clickedItem.postSummary)
+
+            intent.putExtra("id", clickedItem.id)
+            intent.putExtra("item", clickedItem)
 
             startActivity(intent)
             slideLeft()

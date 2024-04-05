@@ -6,8 +6,8 @@
     android:background="@color/main_background">
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/tv_signInToGiveHub"
         app:layout_constraintLeft_toLeftOf="parent"

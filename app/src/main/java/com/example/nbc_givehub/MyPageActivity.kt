@@ -2,6 +2,7 @@ package com.example.nbc_givehub
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
@@ -21,7 +22,7 @@ class MyPageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_mypage)
         enableEdgeToEdge()
 
-        val id = intent.getStringExtra("id")?: "Unknown"
+        val userId = intent.getStringExtra("id") ?: "Unknown"
 
         var img = findViewById<ImageView>(R.id.mypage_profile_img)
         var mp_name = findViewById<TextView>(R.id.mypage_name)
@@ -40,16 +41,16 @@ class MyPageActivity : AppCompatActivity() {
 
         //더미 데이터 적용 코드
         val userlist = showlist()
-        val login_user = userlist.indices.find{userlist[it].id == id}
+        val login_user = userlist.indices.find { userlist[it].id == userId }
         mp_name.setText(userlist[login_user!!].name)
-        mp_language.setText(userlist[login_user!!].launguage)
-        mp_mbti.setText(userlist[login_user!!].mbti)
-        mp_git.setText(userlist[login_user!!].git)
-        mp_blog.setText(userlist[login_user!!].blog)
+        mp_language.setText(userlist[login_user].launguage)
+        mp_mbti.setText(userlist[login_user].mbti)
+        mp_git.setText(userlist[login_user].git)
+        mp_blog.setText(userlist[login_user].blog)
 
         // 랜덤 이미지 적용
         var ranimg = random.nextInt(3)
-        when(ranimg){
+        when (ranimg) {
             0 -> img.setImageResource(R.drawable.img1)
             1 -> img.setImageResource(R.drawable.img2)
             2 -> img.setImageResource(R.drawable.img3)
@@ -59,24 +60,25 @@ class MyPageActivity : AppCompatActivity() {
         // 리스트뷰 더미 리스트
         val itemList = ArrayList<MainPageItem>()
         val dummyList = dummyPostData()
-        for(i in dummyList.indices){
-            if(dummyList[i].userName == userlist[login_user!!].name) itemList.add(dummyList[i])
+        for (i in dummyList.indices) {
+            if (dummyList[i].userName == userlist[login_user].name) {
+                itemList.add(dummyList[i])
+            }
         }
 
         //화면에 리스트뷰 그려주기
         val itemAdapter = MainPageAdapter(this, itemList)
         val itemListView = findViewById<ListView>(R.id.mypage_listview)
         itemListView.adapter = itemAdapter
+        itemAdapter.notifyDataSetChanged()
 
         //특정 아이템 클릭 시
-        itemListView.setOnItemClickListener{ adapterView, view, i, l ->
+        itemListView.setOnItemClickListener { adapterView, view, i, l ->
             val clickedItem = itemList[i]
             val intent = Intent(this, DetailPageActivity::class.java)
-            intent.putExtra("userName", clickedItem.userName)
-            intent.putExtra("userImage", clickedItem.userImage)
-            intent.putExtra("postImage", clickedItem.postImage)
-            intent.putExtra("postTitle", clickedItem.postTitle)
-            intent.putExtra("postSummary", clickedItem.postSummary)
+
+            intent.putExtra("id", clickedItem.id)
+            intent.putExtra("item", clickedItem)
 
             startActivity(intent)
             slideLeft()
