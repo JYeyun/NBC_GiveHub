@@ -5,10 +5,8 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,33 +16,36 @@ import de.hdodenhof.circleimageview.CircleImageView
 class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
 
     //상호작용 버튼 선언
-    private var backBtn : ImageButton? = null
-    private var viewBtn : TextView? = null
-    private var likeBtn : ImageView? = null
+    lateinit var backBtn : ImageButton
+    lateinit var viewBtn : TextView
+    lateinit var likeBtn : ImageView
 
     //프로필 선택 시 유저 페이지
-    private var userImg : CircleImageView? = null
-    private var userName : TextView? = null
+    lateinit var userImg : CircleImageView
+    lateinit var userName : TextView
 
-    //좋아요 여부 확인
-    private var isLike : Boolean? = null
-    private var index : Int? = null
+    //좋아요 관련 변수
+    var isLike : Boolean = false
+    var index : Int = 0
+    lateinit var likeCount : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_detailpage)
 
-        //포스트 데이터 띄우기
-        setContents()
-
         userImg = findViewById(R.id.img_detail_profile)
         userName = findViewById(R.id.tv_detail_user)
 
         //상호작용 버튼에 뷰 요소 넣기
-        backBtn = findViewById(R.id.btn_detail_back)!!
-        viewBtn = findViewById(R.id.tv_more_less)!!
-        likeBtn = findViewById(R.id.btn_like)!!
+        backBtn = findViewById(R.id.btn_detail_back)
+        viewBtn = findViewById(R.id.tv_more_less)
+        likeBtn = findViewById(R.id.btn_like)
+
+        likeCount = findViewById(R.id.tv_like)
+
+        //포스트 데이터 띄우기
+        setContents()
     }
 
     //뷰에서 클릭 발생 시 시작 처리
@@ -93,6 +94,7 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
                 Log.d("여기는 디테일 페이지", "좋아요가 눌러져 있었음")
 
                 thisPost.like--
+                likeCount.setText(thisPost.like.toString())
 
                 val thisLike = findViewById<ImageView>(R.id.btn_like)
                 thisLike.setImageResource(R.drawable.img_detail_like_empty)
@@ -103,6 +105,7 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
                 Log.d("여기는 디테일 페이지", "좋아요가 눌러져 있지 않았음")
 
                 thisPost.like++
+                likeCount.setText(thisPost.like.toString())
 
                 val thisLike = findViewById<ImageView>(R.id.btn_like)
                 thisLike.setImageResource(R.drawable.img_detail_like)
@@ -129,21 +132,23 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
         val postSummary = intent.getStringExtra("postSummary")
         val postIsLike = intent.getBooleanExtra("postLike", false)
         val postIndex = intent.getIntExtra("index", 0)
+        val postLikeCount = intent.getIntExtra("postLikeCount", 0)
 
         //화면에 데이터 출력
-        val thisUsetName = findViewById<TextView>(R.id.tv_detail_user)
+        val thisUserName = findViewById<TextView>(R.id.tv_detail_user)
         val thisUserImage = findViewById<ImageView>(R.id.img_detail_profile)
         val thisPostImage = findViewById<ImageView>(R.id.img_detail_post_image)
         val thisTitle = findViewById<TextView>(R.id.tv_detail_title)
         val thisContents = findViewById<TextView>(R.id.tv_detail_contents)
         val thisLike = findViewById<ImageView>(R.id.btn_like)
 
-        thisUsetName.setText(userName)
+        thisUserName.setText(userName)
 
         val imageResource = resources.getIdentifier(postImage.toString(), "drawable", packageName)
         thisPostImage.setImageResource(imageResource)
 
         thisTitle.setText(postTitle)
+        thisTitle.isSelected = true
 
         val userImageResource = resources.getIdentifier(userImage.toString(), "drawable", packageName)
         thisUserImage.setImageResource(userImageResource)
@@ -157,6 +162,8 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
             thisLike.setImageResource(R.drawable.img_detail_like)
             isLike = true
         }
+
+        likeCount.setText(postLikeCount.toString())
 
         index = postIndex
     }
