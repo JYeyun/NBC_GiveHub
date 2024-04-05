@@ -103,17 +103,10 @@ class MainPageActivity : AppCompatActivity() {
         //특정 아이템 클릭 시
         itemListView.setOnItemClickListener { adapterView, view, i, l ->
             val clickedItem = dummyPost[i]
-
             //디테일페이지로 데이터 넘기기
             val intent = Intent(this, DetailPageActivity::class.java)
-            intent.putExtra("index", i)
-            intent.putExtra("userName", clickedItem.userName)
-            intent.putExtra("userImage", clickedItem.userImage)
-            intent.putExtra("postImage", clickedItem.postImage)
-            intent.putExtra("postTitle", clickedItem.postTitle)
-            intent.putExtra("postSummary", clickedItem.postSummary)
-            intent.putExtra("postLike", clickedItem.isLike)
-            intent.putExtra("postLikeCount", clickedItem.like)
+            intent.putExtra("id", clickedItem.id)
+            intent.putExtra("item", clickedItem)
             startActivity(intent)
             slideLeft()
         }
