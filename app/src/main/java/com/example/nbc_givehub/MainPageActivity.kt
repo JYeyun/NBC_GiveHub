@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import android.content.Intent
 import android.graphics.Paint
 import android.os.Bundle
+import android.util.Log
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.ListView
@@ -23,6 +24,7 @@ class MainPageActivity : AppCompatActivity() {
     private var isPopular = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_mainpage)
@@ -38,9 +40,6 @@ class MainPageActivity : AppCompatActivity() {
         var mainText = findViewById<TextView>(R.id.tv_main)
         var popularText = findViewById<TextView>(R.id.tv_popular)
         mainText.paintFlags = Paint.UNDERLINE_TEXT_FLAG
-
-        //리스트뷰
-        makeListView(dummyPost)
 
         //홈피드 눌렀을 때 데이터 로딩
         mainBtn.setOnClickListener {
@@ -62,6 +61,13 @@ class MainPageActivity : AppCompatActivity() {
         logoutBtn.setOnClickListener {
             doLogout()
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        //리스트뷰
+        makeListView(dummyPost)
     }
 
     private fun changeMain(mainText: TextView, popularText: TextView) {
@@ -99,6 +105,7 @@ class MainPageActivity : AppCompatActivity() {
         val itemAdapter = MainPageAdapter(this, dummyPost)
         val itemListView = findViewById<ListView>(R.id.mainListView)
         itemListView.adapter = itemAdapter
+        itemAdapter.notifyDataSetChanged()
 
         //특정 아이템 클릭 시
         itemListView.setOnItemClickListener { adapterView, view, i, l ->
@@ -115,6 +122,7 @@ class MainPageActivity : AppCompatActivity() {
     private fun goMyPage() {
         //로그인 페이지에서 현재 로그인한 ID 데이터 받아오기
         val id = intent.getStringExtra("id") ?: "Unknown"
+        Log.d("여기는 메인페이지", id)
         //마이페이지로 이동
         val intent = Intent(this, MyPageActivity::class.java)
         intent.putExtra("id", id)
@@ -150,5 +158,7 @@ class MainPageActivity : AppCompatActivity() {
         dialog.setNegativeButton(R.string.cancel, null)
         dialog.show()
     }
+
+
 }
 
