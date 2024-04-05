@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\dolla\OneDrive\Desktop\android\aa\NBC_GiveHub\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\dolla\OneDrive\Desktop\android\aa\NBC_GiveHub\app\src\debug\shaders"/></dataSet></merger>
+<<<<<<< HEAD
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\dolla\OneDrive\Desktop\android\4_Task\NBC_GiveHub2\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\dolla\OneDrive\Desktop\android\4_Task\NBC_GiveHub2\app\src\debug\shaders"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\82104\AndroidStudioProjects\NBC_GiveHub5\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\82104\AndroidStudioProjects\NBC_GiveHub5\app\src\debug\shaders"/></dataSet></merger>
+>>>>>>> 43961b6e4829869cb6feae86e4f99d949a4e91ce
