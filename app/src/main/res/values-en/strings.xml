@@ -23,4 +23,8 @@
     <string name="viewLess">View less ▲</string>
     <string name="home">Home feed</string>
     <string name="signUpTitle">Please sign up</string>
+    <string name="signUpPwCheck">Please re-enter your password</string>
+    <string name="already">If you already have an account</string>
+    <string name="signUpPwCheckText">Check the password</string>
+    <string name="signupComplete">Signup complete</string>
 </resources>

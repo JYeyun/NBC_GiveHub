@@ -21,32 +21,50 @@ class SignUpActivity : AppCompatActivity() {
     var nameCheck = false
     var idCheck = false
     var pwCheck = false
+    var pwCheck2 = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_signup)
-        val sginUpName = findViewById<EditText>(R.id.singUpName)
-        val sginUpId = findViewById<EditText>(R.id.singUpId)
-        val sginUpPw = findViewById<EditText>(R.id.singUpPw)
-        val sginUpNameCheck = findViewById<ImageView>(R.id.singUpNameCheck)
-        val sginUpIdCheck = findViewById<ImageView>(R.id.singUpIdCheck)
-        val sginUpPwCheck = findViewById<ImageView>(R.id.singUpPwCheck)
+        val signUpName = findViewById<EditText>(R.id.singUpName)
+        val signUpId = findViewById<EditText>(R.id.singUpId)
+        val signUpPw = findViewById<EditText>(R.id.singUpPw)
+        val signUpPwDoubleCheck = findViewById<EditText>(R.id.singUpPwDobleCheck)
 
-        val sginUpBt = findViewById<Button>(R.id.signUpBt)
-        val sginUpBackBt = findViewById<TextView>(R.id.singUpBack)
+        val signUpNameCheck = findViewById<ImageView>(R.id.singUpNameCheck)
+        val signUpIdCheck = findViewById<ImageView>(R.id.singUpIdCheck)
+        val signUpPwCheck = findViewById<ImageView>(R.id.singUpPwCheck)
+        val singUpPwDobleCheck2 = findViewById<ImageView>(R.id.singUpPwDobleCheck2)
 
+        val signUpBt = findViewById<Button>(R.id.signUpBt)
+        val signUpBackBt = findViewById<TextView>(R.id.singUpBack)
+
+        signUpBt.isEnabled = false
+
+        //버튼 활성화
+        fun btOnOff(){
+            if (nameCheck && idCheck && pwCheck&& pwCheck2){
+                signUpBt.isEnabled = true
+                signUpBt.setBackgroundResource(R.drawable.buttoncustom)
+            }else {
+                signUpBt.isEnabled = false
+                signUpBt.setBackgroundResource(R.drawable.buttoncustom2)
+            }
+        }
 
         //이름 확인
-        sginUpName.addTextChangedListener(object : TextWatcher {
+        signUpName.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                if (sginUpName.text.isNotBlank()) {
-                    sginUpNameCheck.setImageResource(R.drawable.icon_check_mark)
+                if (signUpName.text.isNotBlank()) {
+                    signUpNameCheck.setImageResource(R.drawable.icon_check_mark)
                     nameCheck = true
                 } else {
-                    sginUpNameCheck.setImageResource(R.drawable.x_icon)
+                    signUpNameCheck.setImageResource(R.drawable.x_icon)
+                    nameCheck = false
                 }
+                btOnOff()
             }
 
             override fun afterTextChanged(p0: Editable?) {
@@ -54,15 +72,17 @@ class SignUpActivity : AppCompatActivity() {
         })
 
         //아이디 확인
-        sginUpId.addTextChangedListener(object : TextWatcher {
+        signUpId.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                if (idPatternCheck(sginUpId.text.toString())) {
-                    sginUpIdCheck.setImageResource(R.drawable.icon_check_mark) //유효성 검사 완료되면 체크표시
+                if (idPatternCheck(signUpId.text.toString())) {
+                    signUpIdCheck.setImageResource(R.drawable.icon_check_mark) //유효성 검사 완료되면 체크표시
                     idCheck = true
                 } else {
-                    sginUpIdCheck.setImageResource(R.drawable.x_icon)
+                    signUpIdCheck.setImageResource(R.drawable.x_icon)
+                    idCheck = false
                 }
+                btOnOff()
             }
 
             override fun afterTextChanged(p0: Editable?) {
@@ -70,66 +90,86 @@ class SignUpActivity : AppCompatActivity() {
         })
 
         //비밀번호 확인
-        sginUpPw.addTextChangedListener(object : TextWatcher {
+        signUpPw.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-                if (pwPatternCheck(sginUpPw.text.toString())) {
-                    sginUpPwCheck.setImageResource(R.drawable.icon_check_mark)
+                if (pwPatternCheck(signUpPw.text.toString())) {
+                    signUpPwCheck.setImageResource(R.drawable.icon_check_mark)
                     pwCheck = true
                 } else {
-                    sginUpPwCheck.setImageResource(R.drawable.x_icon)
+                    signUpPwCheck.setImageResource(R.drawable.x_icon)
+                    pwCheck = false
                 }
+                btOnOff()
             }
 
             override fun afterTextChanged(p0: Editable?) {
             }
         })
 
-        //회원가입 버튼
-        sginUpBt.setOnClickListener {
-            //정보 누락 시
-            if (sginUpName.text.isBlank() || sginUpId.text.isBlank() || sginUpPw.text.isBlank()) {
-                Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
+        //비밀번호 재확인
+        signUpPwDoubleCheck.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                if (signUpPw.text.toString() == signUpPwDoubleCheck.text.toString()) {
+                    singUpPwDobleCheck2.setImageResource(R.drawable.icon_check_mark)
+                    pwCheck2 = true
+                } else {
+                    singUpPwDobleCheck2.setImageResource(R.drawable.x_icon)
+                    pwCheck2 = false
+                }
+                btOnOff()
             }
-            //모든 정보 입력 시
-            else {
+
+            override fun afterTextChanged(p0: Editable?) {
+            }
+        })
+
+
+        //회원가입 버튼
+        signUpBt.setOnClickListener {
+//            //정보 누락 시
+//            if (signUpName.text.isBlank() || signUpId.text.isBlank() || signUpPw.text.isBlank()) {
+//                Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
+//            }
+//            //모든 정보 입력 시
+//            else {
+
                 //아이디 중복 없을 시
-                if (idCheck(sginUpId.text.toString())) {
-                    //모든 항목이 적절하게 입력되었으면
-                    if (nameCheck && idCheck && pwCheck) {
+                if (idCheck(signUpId.text.toString())) {
+//                    //모든 항목이 적절하게 입력되었으면
+//                    if (nameCheck && idCheck && pwCheck) {
                         //회원정보를 리스트에 저장
                         createUser(
-                            sginUpId.text.toString(),
-                            sginUpPw.text.toString(),
-                            sginUpName.text.toString()
+                            signUpId.text.toString(),
+                            signUpPw.text.toString(),
+                            signUpName.text.toString()
                         )
 
-                        Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.signupComplete, Toast.LENGTH_SHORT).show()
 
                         //로그인 화면으로 데이터 넘김
                         val intent = Intent(this, LoginActivity::class.java).apply {
-                            putExtra("SingIn_ID", sginUpId.text.toString())
-                            putExtra("SingIn_PW", sginUpPw.text.toString())
+                            putExtra("SingIn_ID", signUpId.text.toString())
+                            putExtra("SingIn_PW", signUpPw.text.toString())
                         }
                         setResult(Activity.RESULT_OK, intent)
                         slideLeft()
+                        finish()
 
-                        //액티비티 강제 종료
-                        if (!isFinishing) {
-                            finish()
-                        }
-                    } else {
-                        Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
-                    }
+//                    } else {
+//                        Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
+//                    }
                 }
                 //아이디 중복 있을 시
                 else {
                     Toast.makeText(this, R.string.idHint, Toast.LENGTH_SHORT).show()
                 }
             }
-        }
+//        }
+
         //뒤로가기 버튼
-        sginUpBackBt.setOnClickListener {
+        signUpBackBt.setOnClickListener {
             finish()
             slideUp()
         }
