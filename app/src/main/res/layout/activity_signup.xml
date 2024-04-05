@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/give_hub" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signUpTitle"
+        android:layout_marginTop="30sp"
+        android:fontFamily="@font/nanumsquareb"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/singUpName"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/text_edit"
+        android:ems="10"
+        android:hint="@string/nameHint"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/singUpId"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/text_edit"
+        android:ems="10"
+        android:hint="@string/idHint"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singUpName" />
+
+    <EditText
+        android:id="@+id/singUpPw"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/text_edit"
+        android:ems="10"
+        android:hint="@string/pwHint"
+        android:inputType="textPassword"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singUpId" />
+
+    <android.widget.Button
+        android:id="@+id/signUpBt"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/buttoncustom"
+        android:backgroundTint="@color/main_green"
+        android:fontFamily="@font/nanumsquareb"
+        android:text="@string/signUpBt"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/singUpBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F8F9FA"
+        android:text="@string/singUpBack"
+        android:textColor="@color/text_button"
+        android:layout_marginLeft="5dp"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_already"
+        app:layout_constraintTop_toTopOf="@+id/tv_already"
+     />
+
+    <ImageView
+        android:id="@+id/singUpNameCheck"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/main_background"
+        app:layout_constraintBottom_toBottomOf="@+id/singUpName"
+        app:layout_constraintEnd_toEndOf="@+id/singUpName"
+        app:layout_constraintTop_toTopOf="@+id/singUpName" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nanumsquareb"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        android:text="@string/pwPattern"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singUpPw" />
+
+    <ImageView
+        android:id="@+id/singUpIdCheck"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/main_background"
+        app:layout_constraintBottom_toBottomOf="@+id/singUpId"
+        app:layout_constraintEnd_toEndOf="@+id/singUpId"
+        app:layout_constraintTop_toTopOf="@+id/singUpId" />
+
+    <ImageView
+        android:id="@+id/singUpPwCheck"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/main_background"
+        app:layout_constraintBottom_toBottomOf="@+id/singUpPw"
+        app:layout_constraintEnd_toEndOf="@+id/singUpPw"
+        app:layout_constraintTop_toTopOf="@+id/singUpPw" />
+
+<!--    <View-->
+<!--        android:id="@+id/signUp_line"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:background="@color/main_gray"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:layout_marginTop="220dp"-->
+<!--         />-->
+
+    <TextView
+        android:id="@+id/tv_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미 계정이 있으시다면"
+        android:textSize="11sp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/singUpBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBt"
+        android:layout_marginTop="10dp"
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--
+    1.전체적으로 라인 내리고
+    2. 유효성 검사 꽉안차게
+    3. 회원가입 영어 버전 Create-->

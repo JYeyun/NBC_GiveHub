@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NBC_Givehub</string>
+    <string name="name">Name</string>
+    <string name="id">ID</string>
+    <string name="pw">Password</string>
+    <string name="nameHint">Enter your name</string>
+    <string name="idHint">Enter your id</string>
+    <string name="pwHint">Enter your password</string>
+    <string name="back">Back</string>
+    <string name="pwPattern">Your password must be 8~20 characters and should contain at-least 1 uppercase, 1 numeric characters.</string>
+    <string name="logoutMessageTitle">Do you want logout?</string>
+    <string name="logoutMessageContents">See you next time!</string>
+    <string name="logoutComplete">Logout complete</string>
+    <string name="popular">Popular feed</string>
+    <string name="logoutDo">Logout</string>
+    <string name="signInBt">Sign in</string>
+    <string name="signUpBt">Create</string>
+    <string name="loginTitle">Sign in to GiveHub</string>
+    <string name="cancel">Cancel</string>
+    <string name="idPwCheck">We do not recognize the ID or Password</string>
+    <string name="viewMore">View more ▼</string>
+    <string name="viewLess">View less ▲</string>
+    <string name="home">Home feed</string>
+    <string name="signUpTitle">Please sign up</string>
+    <string name="singUpBack">LogIn</string>
+</resources>

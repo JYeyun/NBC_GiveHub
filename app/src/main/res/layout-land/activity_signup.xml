@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_background">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/singUpName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/give_hub" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="70dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/singUpName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/singUpName"/>
+    <EditText
+        android:id="@+id/singUpName"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:background="@drawable/text_edit"
+        android:ems="10"
+        android:hint="@string/nameHint"
+        android:inputType="text"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/singUpName" />
+
+    <EditText
+        android:id="@+id/singUpId"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:background="@drawable/text_edit"
+        android:ems="10"
+        android:hint="@string/idHint"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pw"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/singUpId" />
+    <EditText
+        android:id="@+id/singUpPw"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:background="@drawable/text_edit"
+        android:ems="10"
+        android:hint="@string/pwHint"
+        android:inputType="textPassword"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <android.widget.Button
+        android:id="@+id/signUpBt"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttoncustom"
+        android:backgroundTint="@color/main_green"
+        android:text="@string/signUpBt"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/singUpPw"
+        app:layout_constraintTop_toBottomOf="@id/singUpPw"
+        app:layout_constraintStart_toStartOf="@+id/singUpPw"/>
+
+    <TextView
+        android:id="@+id/singUpBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F8F9FA"
+        android:text="@string/back"
+        android:textColor="@color/text_button"
+        android:layout_marginLeft="5dp"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_already"
+        app:layout_constraintTop_toTopOf="@+id/tv_already"
+        />
+
+    <TextView
+        android:id="@+id/tv_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="이미 계정이 있으시다면"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/singUpBack"
+
+        app:layout_constraintEnd_toEndOf="@+id/signUpBt"
+        app:layout_constraintStart_toStartOf="@+id/signUpBt"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
