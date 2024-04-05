@@ -24,13 +24,14 @@ class MainPageAdapter(val context: Context, val itemList: ArrayList<MainPageItem
 
         val userImage = view.findViewById<ImageView>(R.id.user_image)
         val userName = view.findViewById<TextView>(R.id.user_name)
-        val postImage = view.findViewById<ImageView>(R.id.post_image)
+        val postImage = view.findViewById<ImageView>(R.id.post_image_view)
         val postName = view.findViewById<TextView>(R.id.post_name)
         val postContents = view.findViewById<TextView>(R.id.post_contents)
         val postLike = view.findViewById<TextView>(R.id.like)
 
         val item = itemList[position]
         userImage.setImageResource(item.userImage)
+        //userImage.bringToFront()
         userName.text = item.userName
         postImage.setImageResource(item.postImage)
         postName.text = item.postTitle

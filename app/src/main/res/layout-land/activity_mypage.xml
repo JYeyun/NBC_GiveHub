@@ -136,7 +136,7 @@
         android:id="@+id/mypage_git"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="170dp"
+        android:maxWidth="200dp"
         app:layout_constraintLeft_toRightOf="@+id/mypage_profile_img"
         app:layout_constraintRight_toLeftOf="@+id/mypage_listview"
         app:layout_constraintTop_toBottomOf="@+id/mypage_mbti"
