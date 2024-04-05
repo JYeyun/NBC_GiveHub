@@ -13,24 +13,30 @@
         android:layout_margin="2dp"
         android:background="@drawable/mainpage_cl_item_rec"
         android:elevation="2dp"
-        android:padding="5dp"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <androidx.cardview.widget.CardView
             android:id="@+id/post_image"
             android:layout_width="match_parent"
             android:layout_height="250sp"
             android:layout_margin="8dp"
-            android:background="@drawable/mainpage_fl_btn_rec"
-            android:cropToPadding="true"
-            android:padding="8dp"
-            android:scaleType="center"
-            android:src="@drawable/img_post1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/post_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_post1"/>
+
+        </androidx.cardview.widget.CardView>
+
 
         <TextView
             android:id="@+id/user_name"
@@ -39,8 +45,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="8dp"
             android:text="neoneoneo123"
-            android:textSize="12sp"
             android:textColor="@color/text_gray"
+            android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/post_image" />
 
@@ -52,10 +58,10 @@
             android:text="|"
             android:textColor="@color/text_gray"
             android:textSize="12sp"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/user_name"
             app:layout_constraintStart_toEndOf="@+id/user_name"
-            app:layout_constraintTop_toTopOf="@+id/user_name"
-            android:visibility="invisible"/>
+            app:layout_constraintTop_toTopOf="@+id/user_name" />
 
         <TextView
             android:id="@+id/textView9"
@@ -65,10 +71,10 @@
             android:text="2024.04.03"
             android:textColor="@color/text_gray"
             android:textSize="12sp"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="@+id/textView4"
             app:layout_constraintStart_toEndOf="@+id/textView4"
-            app:layout_constraintTop_toTopOf="@+id/textView4"
-            android:visibility="invisible"/>
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
 
         <TextView
             android:id="@+id/post_name"
@@ -85,14 +91,14 @@
             android:id="@+id/post_contents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:text="그만 알아보자"
             android:textColor="@color/text_gray"
             android:textSize="13sp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
             app:layout_constraintStart_toStartOf="@+id/post_name"
             app:layout_constraintTop_toBottomOf="@+id/post_name" />
 
@@ -133,13 +139,14 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/user_image"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="105dp"
-            android:padding="8dp"
-            android:src="@drawable/give_hub"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginEnd="30sp"
+            android:layout_marginBottom="95sp"
             android:background="@drawable/mainpage_cl_item_cir"
+            android:padding="8dp"
+            android:translationZ="10dp"
+            android:src="@drawable/give_hub"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
