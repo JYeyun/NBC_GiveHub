@@ -23,4 +23,5 @@
     <string name="viewLess">View less ▲</string>
     <string name="home">Home feed</string>
     <string name="signUpTitle">Please sign up</string>
+    <string name="singUpBack">LogIn</string>
 </resources>
