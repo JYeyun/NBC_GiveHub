@@ -113,6 +113,7 @@ class MainPageActivity : AppCompatActivity() {
             intent.putExtra("postTitle", clickedItem.postTitle)
             intent.putExtra("postSummary", clickedItem.postSummary)
             intent.putExtra("postLike", clickedItem.isLike)
+            intent.putExtra("postLikeCount", clickedItem.like)
             startActivity(intent)
             slideLeft()
         }
