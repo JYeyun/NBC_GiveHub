@@ -2,6 +2,7 @@ package com.example.nbc_givehub
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Html
 import android.text.TextUtils
 import android.util.Log
 import android.view.View
@@ -153,7 +154,7 @@ class DetailPageActivity : AppCompatActivity(), View.OnClickListener {
         val userImageResource = resources.getIdentifier(userImage.toString(), "drawable", packageName)
         thisUserImage.setImageResource(userImageResource)
 
-        thisContents.setText(postSummary)
+        thisContents.setText(Html.fromHtml(postSummary))
 
         if (!postIsLike) { //좋아요가 눌러져 있지 않으면
             thisLike.setImageResource(R.drawable.img_detail_like_empty)
