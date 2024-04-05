@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-#Fri Apr 05 13:01:51 JST 2024
+#Fri Apr 05 15:48:36 JST 2024
 base.0=C\:\\Users\\dolla\\OneDrive\\Desktop\\android\\4_Task\\NBC_GiveHub2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\dolla\\OneDrive\\Desktop\\android\\4_Task\\NBC_GiveHub2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\dolla\\OneDrive\\Desktop\\android\\4_Task\\NBC_GiveHub2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-=======
-#Fri Apr 05 12:50:50 KST 2024
-base.0=C\:\\Users\\ajh98\\Documents\\GitHub\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\ajh98\\Documents\\GitHub\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\ajh98\\Documents\\GitHub\\NBC_GiveHub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
->>>>>>> 43961b6e4829869cb6feae86e4f99d949a4e91ce
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=15/classes.dex
